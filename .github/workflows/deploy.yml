@@ -1,0 +1,66 @@
+# Rebuilds the data from SIPRI and publishes the site to GitHub Pages.
+# Runs on every push to main, on demand, and monthly (SIPRI updates each March;
+# the monthly run picks that up without anyone remembering to).
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 1 * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r pipeline/requirements.txt
+
+      # Fails the deploy if any sanity check in pipeline/checks.py fails, so a
+      # broken SIPRI release never reaches the live site.
+      - name: Build data from latest SIPRI release
+        run: python pipeline/run_all.py --refresh
+        env:
+          # Deal-level records reproduce SIPRI data; withheld until SIPRI grants
+          # permission to republish (see docs/sipri-permission-request.md).
+          ARMS_INCLUDE_DEALS: "0"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: dashboard/package-lock.json
+      - run: npm ci
+        working-directory: dashboard
+      - run: npm run build
+        working-directory: dashboard
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dashboard/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -5,6 +5,7 @@ import { originInSentence, pct } from '../lib/format'
 import { headline, holdingsAt, sharesOf } from '../lib/profile'
 import DealsTable from './DealsTable'
 import ExposurePanel from './ExposurePanel'
+import FactbookCheck from './FactbookCheck'
 import HoldingsChart from './HoldingsChart'
 import OrdersPanel from './OrdersPanel'
 
@@ -78,6 +79,7 @@ export default function CountryPage() {
         subtitle={`Estimated share of imported equipment in service each year, by the country that designed it. ${profile.seriesStart}–${profile.dataYear}.`}
       >
         <HoldingsChart profile={profile} />
+        <div className="mt-6"><FactbookCheck profile={profile} /></div>
       </Section>
 
       {origin && (

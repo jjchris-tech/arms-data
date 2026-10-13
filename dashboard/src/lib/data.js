@@ -16,3 +16,4 @@ function load(path) {
 
 export const loadIndex = () => load('countries.json')
 export const loadCountry = iso3 => load(`country/${iso3}.json`)
+export const loadValidation = () => load('validation.json')

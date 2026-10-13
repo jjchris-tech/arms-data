@@ -16,6 +16,10 @@ behind it.
 3. **In-service estimate** — each delivery stays in service for a typical life for its type (12 years for munitions
    to 35 for ships and armour; half for second-hand), since SIPRI does not record retirements.
 
+4. **Independent check** — each estimate is compared with the CIA World Factbook's description of that military's
+   equipment (final edition, 2025). Currently our largest design origin matches the Factbook's stated main source
+   for about 80% of countries; the site lists every disagreement and the likely reason.
+
 Full method and limitations are on the site's Method page. Key limits: imported equipment only (domestic
 production is invisible), re-exports are not yet subtracted, and SIPRI flags about half of all deals as having
 uncertain figures.

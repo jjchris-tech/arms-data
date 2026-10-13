@@ -86,6 +86,13 @@ def main():
         index = json.load(f)
     check(len(index["countries"]) >= 150, f"index covers {len(index['countries'])} countries")
 
+    print("Validation against the CIA World Factbook")
+    with open(config.APP_DATA_DIR / "validation.json", encoding="utf-8") as f:
+        summary = json.load(f)["summary"]
+    rate = summary["dominant"]["agreeRate"]
+    check(rate is not None and rate >= 0.70,
+          f"top origin agrees with the Factbook's stated main source for {rate:.0%} of countries (need >= 70%)")
+
     if failures:
         print(f"\n{len(failures)} check(s) failed")
         sys.exit(1)

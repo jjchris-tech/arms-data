@@ -11,12 +11,16 @@ pipeline/                 Python data pipeline (run from project root)
   step1_acquire.py        downloads SIPRI trade register -> data/raw/  (--refresh to re-download)
   step2_deals.py          one row per deal + design origin, flags, backlog -> data/interim/deals.parquet
   step3_dependency.py     in-service model -> dashboard/public/data/countries.json + country/{ISO3}.json
+  step4_validation.py     compares our top design origin with the CIA World Factbook's equipment text -> validation.json
   checks.py               sanity checks against known facts; run_all.py fails loudly if one breaks
+  build_factbook_reference.py  one-off: regenerates data/reference/factbook_equipment.csv (CC0, committed)
+  utils/factbook.py       parses Factbook prose into main / mentioned origins
   utils/design_origin.py  who designed a system (not who sold it); USSR -> RUS; Antonov/Ivchenko -> UKR
   utils/capabilities.py   weapon_desc -> capability area + service life
 dashboard/                React 19 + Vite + Tailwind v4 + Recharts, HashRouter, base path /arms-data/
   src/lib/profile.js      all share/aggregation maths for the UI lives here, not in components
 data/raw/                 sipri-trade-register.csv (input), SIPRI milex xlsx (unused, kept for later)
+data/reference/           public-domain reference data, safe to commit (Factbook equipment text)
 docs/data-sources.md      researched candidate datasets for future features
 ```
 
@@ -43,6 +47,8 @@ attribution: "Information from the Stockholm International Peace Research Instit
 - Imported equipment only: domestic production is invisible, so big producers look import-dependent. Always caveat.
 - Re-exports are not subtracted from the exporter's in-service estimate (known limitation).
 - After changing classification or origin logic, read the `report()` output of step 2 and run `checks.py`.
+- Validation (step 4) is an out-of-sample check: don't tune model parameters (e.g. service lives) to raise the
+  Factbook agreement score, or the published score stops meaning anything. Known gap: inherited Soviet/Yugoslav stocks.
 
 ## Working conventions
 

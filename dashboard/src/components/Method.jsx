@@ -1,3 +1,7 @@
+import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import Validation from './Validation'
+
 const LIVES = [
   ['Naval, armour, artillery', 35],
   ['Combat aircraft, support aircraft, helicopters', 30],
@@ -6,11 +10,19 @@ const LIVES = [
   ['Missiles & munitions', 12],
 ]
 
-function H({ children }) {
-  return <h2 className="mt-10 text-lg font-semibold tracking-tight">{children}</h2>
+function H({ children, id }) {
+  return <h2 id={id} className="mt-10 text-lg font-semibold tracking-tight scroll-mt-6">{children}</h2>
 }
 
 export default function Method() {
+  // HashRouter puts the route in the URL hash, so "#/method#validation" needs a manual scroll
+  const { hash } = useLocation()
+  useEffect(() => {
+    if (!hash) return
+    const t = setTimeout(() => document.getElementById(hash.slice(1))?.scrollIntoView(), 300)
+    return () => clearTimeout(t)
+  }, [hash])
+
   return (
     <article className="max-w-3xl leading-relaxed text-stone-700 dark:text-stone-300">
       <h1 className="text-3xl font-semibold tracking-tight text-stone-900 dark:text-stone-100">How this works</h1>
@@ -66,11 +78,16 @@ export default function Method() {
         the last five years of data. Older incomplete deals are usually cancelled or unrecorded, so they are left out.
       </p>
 
+      <H id="validation">How well it matches an independent source</H>
+      <Validation />
+
       <H>Limits to keep in mind</H>
       <ul className="mt-3 list-disc pl-5 space-y-2">
         <li><strong>Imported equipment only.</strong> Weapons a country builds itself are not covered, so large producers
           (the US, Russia, China, France, India in part) look far more import-dependent here than they are.</li>
         <li><strong>Major conventional weapons only.</strong> SIPRI excludes small arms, light weapons and most ammunition.</li>
+        <li><strong>Inherited equipment is invisible.</strong> States that took over Soviet or Yugoslav stocks at
+          independence never “imported” them, so their Russian/Soviet dependency is understated here.</li>
         <li><strong>Re-exports are not subtracted.</strong> Equipment a country later passed on (for example, Soviet-era kit given to
           Ukraine) still counts until its service life runs out.</li>
         <li><strong>Uncertain figures.</strong> SIPRI flags roughly half of all deals as having an uncertain order year or unit count.</li>

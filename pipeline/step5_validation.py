@@ -1,5 +1,5 @@
 """
-Step 4: Check our estimates against the CIA World Factbook.
+Step 5: Check our estimates against the CIA World Factbook.
 
 The Factbook (final edition, 2025) describes each military's equipment in a
 sentence: "the inventory consists mostly of Russian/Soviet-origin equipment
@@ -127,7 +127,7 @@ def build() -> dict:
 
 
 def main():
-    logger.info("=== Step 4: Validation against CIA World Factbook ===")
+    logger.info("=== Step 5: Validation against CIA World Factbook ===")
     result = build()
     s = result["summary"]
     for key in ("dominant", "dominantLargeArsenals", "mixed"):

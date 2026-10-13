@@ -4,6 +4,8 @@ import CountryList from './components/CountryList'
 import CountryPage from './components/CountryPage'
 import DataPage from './components/DataPage'
 import Method from './components/Method'
+import SupplierList from './components/SupplierList'
+import SupplierPage from './components/SupplierPage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -18,8 +20,9 @@ export default function App() {
       <header className="border-b border-stone-200 dark:border-stone-800">
         <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
           <Link to="/" className="font-semibold tracking-tight">Arms Dependency</Link>
-          <nav className="flex gap-5 text-sm text-stone-600 dark:text-stone-400">
+          <nav className="flex gap-3 sm:gap-5 text-sm text-stone-600 dark:text-stone-400">
             <Link to="/" className="hover:text-stone-900 dark:hover:text-stone-100">Countries</Link>
+            <Link to="/suppliers" className="hover:text-stone-900 dark:hover:text-stone-100">Suppliers</Link>
             <Link to="/method" className="hover:text-stone-900 dark:hover:text-stone-100">Method</Link>
             <Link to="/data" className="hover:text-stone-900 dark:hover:text-stone-100">Data</Link>
           </nav>
@@ -30,6 +33,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<CountryList />} />
           <Route path="/country/:iso3" element={<CountryPage />} />
+          <Route path="/suppliers" element={<SupplierList />} />
+          <Route path="/supplier/:iso3" element={<SupplierPage />} />
           <Route path="/method" element={<Method />} />
           <Route path="/data" element={<DataPage />} />
           <Route path="*" element={<p>Page not found. <Link className="underline" to="/">Back to countries</Link></p>} />

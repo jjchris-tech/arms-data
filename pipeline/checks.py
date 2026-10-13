@@ -88,6 +88,14 @@ def main():
     check(share_now(slovakia, "RUS") < 0.10,
           f"Slovakia's Soviet kit passed to Ukraine is removed (Russian-designed share {share_now(slovakia, 'RUS'):.0%})")
 
+    print("Supplier view")
+    with open(config.APP_DATA_DIR / "supplier" / "RUS.json", encoding="utf-8") as f:
+        russia = json.load(f)
+    status_of = {d["iso3"]: d["status"] for d in russia["dependents"]}
+    check(russia["nMajority"] >= 15, f"{russia['nMajority']} militaries run mostly on Russian/Soviet designs (expect >= 15)")
+    check(status_of.get("BLR") == "staying", f"Belarus is staying with Russia ({status_of.get('BLR')})")
+    check(status_of.get("AZE") == "moving_away", f"Azerbaijan is moving away from Russia, now buying Israeli/Turkish ({status_of.get('AZE')})")
+
     print("Inherited equipment (successor states)")
     belarus, uzbekistan = profile("BLR"), profile("UZB")
     check(share_now(belarus, "RUS") >= 0.80, f"Belarus overwhelmingly Russian/Soviet-designed ({share_now(belarus, 'RUS'):.0%})")

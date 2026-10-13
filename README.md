@@ -23,6 +23,10 @@ behind it.
    equipment (final edition, 2025). Currently our largest design origin matches the Factbook's stated main source
    for about 84% of countries; the site lists every disagreement and the likely reason.
 
+The same estimates are also turned around into a **supplier view**: for each design origin, which militaries depend
+on its equipment, in which capability areas, and whether their recent orders show them staying, diversifying or
+moving away.
+
 Full method and limitations are on the site's Method page. Key limits: domestic production is invisible, and SIPRI flags about half of all deals as having uncertain figures.
 
 ## Running it

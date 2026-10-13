@@ -11,8 +11,9 @@ pipeline/                 Python data pipeline (run from project root)
   step1_acquire.py        downloads SIPRI trade register -> data/raw/  (--refresh to re-download)
   step2_deals.py          one row per deal + design origin, flags, backlog -> data/interim/deals.parquet
   step3_dependency.py     in-service model -> dashboard/public/data/countries.json + country/{ISO3}.json
-  step4_validation.py     compares our top design origin with the CIA World Factbook's equipment text -> validation.json
-  step5_downloads.py      analyst CSVs + manifest.json (column dictionary) -> dashboard/public/data/downloads/
+  step4_suppliers.py      supplier view: who depends on each design origin, 'still buying?' status -> suppliers.json, supplier/{ISO3}.json
+  step5_validation.py     compares our top design origin with the CIA World Factbook's equipment text -> validation.json
+  step6_downloads.py      analyst CSVs + manifest.json (column dictionary) -> dashboard/public/data/downloads/
                           (derived estimates only, never SIPRI deal records)
   checks.py               sanity checks against known facts; run_all.py fails loudly if one breaks
   build_factbook_reference.py  one-off: regenerates data/reference/factbook_equipment.csv (CC0, committed)
@@ -61,4 +62,4 @@ attribution: "Information from the Stockholm International Peace Research Instit
 
 - The user prefers honest assessments over enthusiasm, and one feature done well over many done roughly.
 - Audience is analysts: traceability, downloads and method transparency matter more than polish.
-- Keep the UI minimal: list, country, method and data pages. New features must earn their place.
+- Keep the UI minimal: countries, suppliers, method and data pages. New features must earn their place.

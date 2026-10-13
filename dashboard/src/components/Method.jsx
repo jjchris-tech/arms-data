@@ -109,6 +109,21 @@ export default function Method() {
         the page revision it came from.
       </p>
 
+      <H id="suppliers">The supplier view</H>
+      <p className="mt-3">
+        Supplier pages turn the same estimates around: for each design origin, the share of every other country’s arsenal
+        it accounts for. A supplier’s own forces are never included — this is an import-based model. Countries with
+        arsenals under 100 TIV are listed but left out of counts, because a single delivery swings their shares.
+      </p>
+      <p className="mt-3">
+        <strong>Still buying?</strong> compares a country’s dependence today with the share of equipment it ordered over the
+        last ten years from the same design origin. Orders lead deliveries by years, so this shows where dependence is
+        heading. <em>Staying</em>: the order share is at least 80% of today’s dependence. <em>Diversifying</em>: 40–80%.
+        <em> Moving away</em>: under 40%. <em>Few orders</em>: under 50 TIV ordered in the period, too little to judge. Orders
+        are counted by design origin, so Soviet-designed tanks bought second-hand from Poland still count as
+        Russian/Soviet: they still need Russian-pattern parts and ammunition.
+      </p>
+
       <H id="validation">How well it matches an independent source</H>
       <Validation />
 

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { originColor, originInSentence, originName, pct, tiv } from '../lib/format'
 import { holdingsAt, sharesOf } from '../lib/profile'
 
@@ -35,7 +36,8 @@ export default function ExposurePanel({ profile, origin, onOriginChange, onSelec
 
       <p className="mt-4 text-sm text-stone-600 dark:text-stone-400">
         Share of each area’s imported equipment that was designed in <strong className="text-stone-900 dark:text-stone-100">{originInSentence(profile.origins, origin)}</strong> —
-        {' '}{pct(shares[origin])} of the imported arsenal overall.
+        {' '}{pct(shares[origin])} of the arsenal overall.{' '}
+        <Link to={`/supplier/${origin}`} className="underline underline-offset-2">Who else depends on {originInSentence(profile.origins, origin)}?</Link>
       </p>
 
       <ul className="mt-3 divide-y divide-stone-100 dark:divide-stone-900">

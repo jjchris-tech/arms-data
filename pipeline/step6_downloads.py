@@ -1,5 +1,5 @@
 """
-Step 5: Downloadable CSVs of this site's estimates, for analysts.
+Step 6: Downloadable CSVs of this site's estimates, for analysts.
 
 Writes dashboard/public/data/downloads/*.csv plus manifest.json, which
 describes every file and column and drives the app's Data page.
@@ -76,6 +76,22 @@ FILES = {
             "tiv_in_service": "Estimated equipment in service in this area from this origin (TIV)",
             "share_of_capability": "Share of this capability area (0-1)",
             "capability_share_of_arsenal": "This capability area's share of the whole estimated arsenal (0-1)",
+        },
+    },
+    "supplier_dependents.csv": {
+        "title": "Who depends on each supplier",
+        "description": "For each design origin, every country that holds its equipment: share of the country's arsenal, change since 2010, share of recent orders and the 'still buying?' status.",
+        "columns": {
+            "supplier_iso3": "Design origin (supplier)", "supplier": "Name of the design origin",
+            "iso3": COMMON["iso3"], "country": COMMON["country"],
+            "tiv_in_service": "Equipment of this origin in the country's estimated arsenal in the data year (TIV)",
+            "share_of_arsenal": "Share of the country's estimated arsenal (0-1)", "share_2010": "Same share in 2010",
+            "recent_orders_tiv": "Everything the country ordered in the last ten years (TIV)",
+            "recent_order_share": "Share of those orders for equipment of this origin (0-1)",
+            "status": "staying / diversifying / moving_away / few_orders (see Method page)",
+            "most_exposed_area": "Capability area (at least 5% of the arsenal) most dependent on this origin",
+            "most_exposed_area_share": "This origin's share of that area (0-1)",
+            "small_arsenal": "Arsenal under 100 TIV: shares are volatile; excluded from headline counts",
         },
     },
     "orders_by_origin.csv": {
@@ -216,6 +232,19 @@ def build():
                 "tiv_added": r["tiv"], "source_page": page, "source_revid": revid.get(page),
             })
 
+    dependents = []
+    for path in sorted((config.APP_DATA_DIR / "supplier").glob("*.json")):
+        with open(path, encoding="utf-8") as f:
+            sp = json.load(f)
+        for d in sp["dependents"]:
+            dependents.append({
+                "supplier_iso3": sp["iso3"], "supplier": sp["name"], "iso3": d["iso3"], "country": d["name"],
+                "tiv_in_service": d["tiv"], "share_of_arsenal": d["share"], "share_2010": d["shareThen"],
+                "recent_orders_tiv": d["ordersTiv"], "recent_order_share": d["orderShare"], "status": d["status"],
+                "most_exposed_area": (d["topArea"] or {}).get("capability"),
+                "most_exposed_area_share": (d["topArea"] or {}).get("share"), "small_arsenal": d["small"],
+            })
+
     checks = []
     for iso3, v in sorted(validation.items()):
         ours = v["ours"] + [{}, {}]
@@ -230,6 +259,7 @@ def build():
     write("countries.csv", summary)
     write("in_service_by_origin.csv", series)
     write("exposure_by_capability.csv", exposure)
+    write("supplier_dependents.csv", dependents)
     write("orders_by_origin.csv", orders)
     write("backlog_by_origin.csv", backlog)
     write("inherited_equipment.csv", inherited)
@@ -249,7 +279,7 @@ def build():
 
 
 def main():
-    logger.info("=== Step 5: Downloads ===")
+    logger.info("=== Step 6: Downloads ===")
     manifest = build()
     for f in manifest["files"]:
         logger.info("  %-28s %7d rows  %6.0f KB", f["file"], f["rows"], f["bytes"] / 1024)

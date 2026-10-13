@@ -62,6 +62,60 @@ def explode_deliveries(deals: pd.DataFrame) -> pd.DataFrame:
     return d[["deal_id", "buyer_successor_iso3", "design_origin_iso3", "capability", "life", "year", "tiv"]]
 
 
+def reexport_tranches(deals: pd.DataFrame, tranches: pd.DataFrame) -> pd.DataFrame:
+    """
+    Negative tranches for equipment a country later passed on second-hand.
+
+    Each second-hand export is matched against the exporter's own imports of the
+    same weapon family that are still in service at the time, oldest first (old
+    kit is what usually gets passed on), and removed from the export year until
+    that import would have retired anyway. Only systems the exporter did not
+    design are adjusted: a designer re-exporting its own system was most likely
+    exporting domestic production, which is not in this import-based model.
+    Inherited equipment is never adjusted — it is a current count already.
+    """
+    exports = deals[
+        deals["is_second_hand"] & deals["seller_successor_iso3"].notna()
+        & (deals["design_origin_iso3"] != deals["seller_successor_iso3"])
+        & (deals["num_delivered"].fillna(0) > 0) & (deals["n_delivery_years"] > 0)
+        & deals["design_family"].notna()
+    ]
+    if exports.empty:
+        return tranches.iloc[0:0].assign(recipient=None)
+
+    meta = deals.set_index("deal_id")[["design_family", "num_delivered", "n_delivery_years"]]
+    imports = tranches.join(meta, on="deal_id")
+    # Exploded tranches share index labels; make them unique for per-row updates
+    imports = imports[imports["num_delivered"].fillna(0) > 0].reset_index(drop=True)
+    imports["units"] = imports["num_delivered"] / imports["n_delivery_years"]
+    imports["per_unit"] = imports["tiv"] / imports["units"]
+    imports["remaining"] = imports["units"]
+    pools = {k: g.sort_values("year") for k, g in imports.groupby(["buyer_successor_iso3", "design_family"])}
+
+    out = []
+    for e in exports.sort_values("first_delivery").itertuples():
+        pool = pools.get((e.seller_successor_iso3, e.design_family))
+        if pool is None:
+            continue
+        per_year = e.num_delivered / e.n_delivery_years
+        for y in (int(v) for v in e.delivery_years.split(";")):
+            need = per_year
+            alive = pool[(pool["year"] <= y) & (y < pool["year"] + pool["life"]) & (pool["remaining"] > 0)]
+            for idx, t in alive.iterrows():
+                if need <= 0:
+                    break
+                take = min(need, pool.at[idx, "remaining"])
+                pool.at[idx, "remaining"] -= take
+                need -= take
+                out.append({
+                    "deal_id": t["deal_id"], "buyer_successor_iso3": e.seller_successor_iso3,
+                    "design_origin_iso3": t["design_origin_iso3"], "capability": t["capability"],
+                    "year": y, "life": t["year"] + t["life"] - y, "tiv": -take * t["per_unit"],
+                    "recipient": e.buyer,
+                })
+    return pd.DataFrame(out)
+
+
 def in_service_series(tranches: pd.DataFrame, years: range) -> pd.DataFrame:
     """In-service TIV by (year, origin, capability) for each year in `years`."""
     out = []
@@ -102,6 +156,15 @@ def deal_record(r) -> dict:
     }
 
 
+def reexport_record(removed: pd.DataFrame) -> dict | None:
+    """Imported equipment this country has since passed on, still deducted in the data year."""
+    total = -removed["tiv"].sum()
+    if total < 0.5:
+        return None
+    by_recipient = (-removed.groupby("recipient")["tiv"].sum()).sort_values(ascending=False)
+    return {"total": _r(total), "toRecipients": {k: _r(v) for k, v in by_recipient.head(5).items() if v >= 0.5}}
+
+
 def inherited_record(iso3: str, legacy: pd.DataFrame) -> dict | None:
     """What was added for equipment inherited at independence, with sources."""
     if iso3 not in COVERED:
@@ -120,7 +183,7 @@ def inherited_record(iso3: str, legacy: pd.DataFrame) -> dict | None:
         "rows": [{
             "system": r.system, "quantity": int(r.quantity), "origin": r.origin, "cap": r.capability,
             "launchersPerUnit": int(r.launchers_per_unit), "recordedUnits": _r(r.recorded_units),
-            "countedUnits": _r(r.counted_units), "unitTiv": _r(r.unit_tiv, 2), "tiv": _r(r.tiv),
+            "countedUnits": _r(r.counted_units), "unitTiv": _r(r.unit_tiv, 2), "tiv": _r(r.tiv), "page": r.page,
         } for r in matched.itertuples()],
     }
 
@@ -134,6 +197,11 @@ def build():
     deals["life"] = deals["capability"].map(SERVICE_LIFE) / np.where(deals["is_second_hand"], 2, 1)
 
     tranches = explode_deliveries(deals)
+    reexports = reexport_tranches(deals, tranches)
+    removed_now = reexports[(reexports["year"] <= data_year) & (data_year < reexports["year"] + reexports["life"])]
+    logger.info("Re-exports: %d adjustments, %.0f TIV removed in total, %.0f still relevant in %d",
+                len(reexports), -reexports["tiv"].sum(), -removed_now["tiv"].sum(), data_year)
+    tranches = pd.concat([tranches, reexports.drop(columns="recipient")], ignore_index=True)
     live_now = tranches[(tranches["year"] <= data_year) & (data_year < tranches["year"] + tranches["life"])]
     deals["tiv_in_service"] = deals["deal_id"].map(live_now.groupby("deal_id")["tiv"].sum()).fillna(0.0)
 
@@ -236,6 +304,7 @@ def build():
             "deals": [deal_record(r) for r in relevant.itertuples()] if INCLUDE_DEALS else None,
             "quality": {"shareUncertain": _r(n_unc, 3), "nDeals": int(len(relevant))},
             "inherited": inherited_record(iso3, legacy),
+            "reexported": reexport_record(removed_now[removed_now["buyer_successor_iso3"] == iso3]),
         }
         with open(country_dir / f"{iso3}.json", "w", encoding="utf-8") as f:
             json.dump(profile, f, separators=(",", ":"), ensure_ascii=False)

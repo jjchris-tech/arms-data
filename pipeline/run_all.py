@@ -1,5 +1,5 @@
 """
-Run the full pipeline: acquire -> deals -> dependency profiles -> validation -> checks.
+Run the full pipeline: acquire -> deals -> dependency profiles -> validation -> downloads -> checks.
 
     python pipeline/run_all.py            # use the existing SIPRI download
     python pipeline/run_all.py --refresh  # re-download from SIPRI first
@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 
-from pipeline import checks, step1_acquire, step2_deals, step3_dependency, step4_validation
+from pipeline import checks, step1_acquire, step2_deals, step3_dependency, step4_validation, step5_downloads
 
 
 def main():
@@ -21,6 +21,7 @@ def main():
     step2_deals.main()
     step3_dependency.main()
     step4_validation.main()
+    step5_downloads.main()
     checks.main()
 
 

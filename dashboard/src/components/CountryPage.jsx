@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import { countrySeriesRows, downloadCsv, SERIES_COLUMNS } from '../lib/csv'
 import { loadCountry } from '../lib/data'
-import { originInSentence, pct } from '../lib/format'
+import { originInSentence, pct, tiv } from '../lib/format'
 import { headline, holdingsAt, sharesOf } from '../lib/profile'
 import DealsTable from './DealsTable'
 import ExposurePanel from './ExposurePanel'
@@ -82,6 +83,13 @@ export default function CountryPage() {
         subtitle={`Estimated share of ${hasInherited ? 'imported and inherited' : 'imported'} equipment in service each year, by the country that designed it. ${profile.seriesStart}–${profile.dataYear}.`}
       >
         <HoldingsChart profile={profile} />
+        {profile.reexported && (
+          <p className="mt-3 text-xs text-stone-500 max-w-3xl">
+            Excludes {tiv(profile.reexported.total)} TIV of imported equipment {profile.name} has since passed on second-hand
+            {' '}({Object.keys(profile.reexported.toRecipients).slice(0, 3).join(', ')}).{' '}
+            <Link to="/method#reexports" className="underline">How re-exports are handled</Link>
+          </p>
+        )}
         <div className="mt-6"><FactbookCheck profile={profile} /></div>
       </Section>
 
@@ -126,6 +134,15 @@ export default function CountryPage() {
         Imported equipment only: weapons {profile.name} builds itself are not in SIPRI’s transfer data.
         {profile.quality.shareUncertain > 0 && <> SIPRI marks some figures as uncertain in {pct(profile.quality.shareUncertain)} of these deals.</>}
         {' '}<Link to="/method" className="underline">How the estimate works</Link>.
+      </p>
+      <p className="mt-2 text-xs text-stone-500">
+        <button
+          onClick={() => downloadCsv(`${profile.iso3}_in_service_by_origin.csv`, SERIES_COLUMNS, countrySeriesRows(profile))}
+          className="underline underline-offset-2 hover:text-stone-900 dark:hover:text-stone-100"
+        >
+          Download {profile.name}’s estimates (CSV)
+        </button>
+        {' · '}<Link to="/data" className="underline underline-offset-2">All countries and other files</Link>
       </p>
     </article>
   )

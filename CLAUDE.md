@@ -12,6 +12,8 @@ pipeline/                 Python data pipeline (run from project root)
   step2_deals.py          one row per deal + design origin, flags, backlog -> data/interim/deals.parquet
   step3_dependency.py     in-service model -> dashboard/public/data/countries.json + country/{ISO3}.json
   step4_validation.py     compares our top design origin with the CIA World Factbook's equipment text -> validation.json
+  step5_downloads.py      analyst CSVs + manifest.json (column dictionary) -> dashboard/public/data/downloads/
+                          (derived estimates only, never SIPRI deal records)
   checks.py               sanity checks against known facts; run_all.py fails loudly if one breaks
   build_factbook_reference.py  one-off: regenerates data/reference/factbook_equipment.csv (CC0, committed)
   utils/factbook.py       parses Factbook prose into main / mentioned origins
@@ -47,7 +49,8 @@ attribution: "Information from the Stockholm International Peace Research Instit
 - Order year leads delivery by years; use orders for "who is switching supplier", deliveries/in-service for "who depends on whom".
 - ~half of deals carry SIPRI `?` uncertainty flags (kept as `*_uncertain` columns) — surface this, don't hide it.
 - Imported equipment only: domestic production is invisible, so big producers look import-dependent. Always caveat.
-- Re-exports are not subtracted from the exporter's in-service estimate (known limitation).
+- Re-exports: step 3 adds negative tranches (reexport_tranches) matching second-hand exports to the exporter's own
+  imports of the same family, oldest first; skipped when the exporter designed the system (domestic production).
 - After changing classification or origin logic, read the `report()` output of step 2 and run `checks.py`.
 - Validation (step 4) is an out-of-sample check: don't tune model parameters (e.g. service lives) to raise the
   Factbook agreement score, or the published score stops meaning anything.
@@ -57,4 +60,5 @@ attribution: "Information from the Stockholm International Peace Research Instit
 ## Working conventions
 
 - The user prefers honest assessments over enthusiasm, and one feature done well over many done roughly.
-- Keep the UI minimal: list page, country page, method page. New features must earn their place.
+- Audience is analysts: traceability, downloads and method transparency matter more than polish.
+- Keep the UI minimal: list, country, method and data pages. New features must earn their place.

@@ -83,6 +83,11 @@ def main():
     check(share_now(poland, "USA") > share_now(poland, "RUS"), "Poland now more US- than Russian-designed")
     check(share_now(vietnam, "RUS") >= 0.75, f"Viet Nam overwhelmingly Russian-designed ({share_now(vietnam, 'RUS'):.0%})")
 
+    print("Re-exports")
+    slovakia = profile("SVK")
+    check(share_now(slovakia, "RUS") < 0.10,
+          f"Slovakia's Soviet kit passed to Ukraine is removed (Russian-designed share {share_now(slovakia, 'RUS'):.0%})")
+
     print("Inherited equipment (successor states)")
     belarus, uzbekistan = profile("BLR"), profile("UZB")
     check(share_now(belarus, "RUS") >= 0.80, f"Belarus overwhelmingly Russian/Soviet-designed ({share_now(belarus, 'RUS'):.0%})")

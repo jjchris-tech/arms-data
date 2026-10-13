@@ -17,12 +17,13 @@ behind it.
    to 35 for ships and armour; half for second-hand), since SIPRI does not record retirements.
 4. **Inherited equipment** — successor states of the USSR and Yugoslavia took over arsenals with no recorded sale;
    what they still operate is added from Wikipedia's equipment lists (12 countries with quantities).
-5. **Independent check** — each estimate is compared with the CIA World Factbook's description of that military's
+5. **Re-exports** — equipment a country later passes on second-hand (e.g. Soviet-era kit given to Ukraine) is removed
+   from its holdings, matched against its own earlier imports of the same system.
+6. **Independent check** — each estimate is compared with the CIA World Factbook's description of that military's
    equipment (final edition, 2025). Currently our largest design origin matches the Factbook's stated main source
    for about 84% of countries; the site lists every disagreement and the likely reason.
 
-Full method and limitations are on the site's Method page. Key limits: domestic production is invisible,
-re-exports are not yet subtracted, and SIPRI flags about half of all deals as having uncertain figures.
+Full method and limitations are on the site's Method page. Key limits: domestic production is invisible, and SIPRI flags about half of all deals as having uncertain figures.
 
 ## Running it
 

@@ -72,6 +72,16 @@ export default function Method() {
         shares are most reliable for large arsenals and over several years; for small ones, a single delivery can swing them.
       </p>
 
+      <H id="reexports">Equipment passed on to others</H>
+      <p className="mt-3">
+        When a country resells or donates second-hand equipment, it no longer has it. SIPRI records these transfers, so
+        each one is matched against the exporter’s own earlier imports of the same weapon family that are still in service,
+        oldest first, and removed from the export year onward. This matters most for countries that gave Soviet-era
+        equipment to Ukraine after 2022: Slovakia, for example, no longer shows Russian-designed kit after passing on its
+        MiG-29s and S-300s. Only systems the exporter did not design are adjusted, and inherited equipment is never
+        adjusted because it is already a current count.
+      </p>
+
       <H>What is on order</H>
       <p className="mt-3">
         A deal counts as on order when fewer units have been delivered than ordered and it has seen an order or delivery in
@@ -109,8 +119,8 @@ export default function Method() {
         <li><strong>Major conventional weapons only.</strong> SIPRI excludes small arms, light weapons and most ammunition.</li>
         <li><strong>Inherited equipment is approximate.</strong> It is added from Wikipedia counts for 12 successor states
           (see above); four have no counts and remain understated.</li>
-        <li><strong>Re-exports are not subtracted.</strong> Equipment a country later passed on (for example, Soviet-era kit given to
-          Ukraine) still counts until its service life runs out.</li>
+        <li><strong>Re-exports of a country’s own designs are not adjusted.</strong> A designer reselling its own system
+          (Germany’s Leopard 2s) was most likely exporting domestic production, which this import-based model cannot see.</li>
         <li><strong>Uncertain figures.</strong> SIPRI flags roughly half of all deals as having an uncertain order year or unit count.</li>
         <li><strong>Licensed production</strong> is attributed to the licensing country, which matches how parts dependency usually works.</li>
       </ul>

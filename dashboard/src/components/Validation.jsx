@@ -52,12 +52,14 @@ export default function Validation() {
 
       <h3 className="mt-6 font-medium text-stone-900 dark:text-stone-100">Where we differ, and why</h3>
       <ul className="mt-2 list-disc pl-5 space-y-2">
-        <li><strong>Inherited stockpiles.</strong> Former Soviet and Yugoslav republics (Ukraine, Uzbekistan, Turkmenistan,
-          Tajikistan, Serbia, Montenegro, Bosnia) took over equipment at independence. No sale was ever recorded, so it is
-          invisible to SIPRI and to us. The Factbook says “mostly Soviet”; we see only what they bought afterwards.</li>
+        <li><strong>Inherited stockpiles where no counts exist.</strong> Equipment taken over at independence is now
+          added for 12 successor states (<Link to="/method#inherited" className="underline">see above</Link>); this alone moved
+          Uzbekistan, Tajikistan and Bosnia from “partly” to “agrees”. Turkmenistan and Montenegro remain unadjusted because
+          no quantities are available. Ukraine’s Soviet stocks have been heavily depleted since 2022, so a US-led import mix
+          there is plausible.</li>
         <li><strong>Old equipment kept in service.</strong> Some militaries (e.g. Bulgaria, Namibia) still operate Soviet
           kit delivered 40+ years ago, beyond our assumed service lives. Lengthening every service life by 25–50% raises the
-          strong-test agreement to roughly 85–87%. We have not tuned the lives to this source, so the score above stays an
+          strong-test agreement to roughly 89%. We have not tuned the lives to this source, so the score above stays an
           honest out-of-sample check.</li>
         <li><strong>Different measures.</strong> We weight equipment by military capability (TIV), so a few large ships
           can outweigh many older land vehicles that a prose description would emphasise.</li>

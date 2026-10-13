@@ -18,6 +18,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from pipeline import config
 from pipeline.step2_deals import DEALS_PARQUET
 from pipeline.utils.capabilities import report_unmapped
+from pipeline.utils.legacy import COVERED
 
 failures = []
 
@@ -81,6 +82,19 @@ def main():
     check(0.55 <= share_now(india, "RUS") <= 0.75, f"India mostly Russian-designed ({share_now(india, 'RUS'):.0%})")
     check(share_now(poland, "USA") > share_now(poland, "RUS"), "Poland now more US- than Russian-designed")
     check(share_now(vietnam, "RUS") >= 0.75, f"Viet Nam overwhelmingly Russian-designed ({share_now(vietnam, 'RUS'):.0%})")
+
+    print("Inherited equipment (successor states)")
+    belarus, uzbekistan = profile("BLR"), profile("UZB")
+    check(share_now(belarus, "RUS") >= 0.80, f"Belarus overwhelmingly Russian/Soviet-designed ({share_now(belarus, 'RUS'):.0%})")
+    check(share_now(uzbekistan, "RUS") >= 0.60, f"Uzbekistan mainly Russian/Soviet-designed ({share_now(uzbekistan, 'RUS'):.0%})")
+    rows = matched = 0
+    for iso3 in COVERED:
+        inh = profile(iso3).get("inherited") or {}
+        if inh.get("status") == "added":
+            rows += len(inh["rows"]) + inh["unmatched"]
+            matched += len(inh["rows"])
+    check(rows > 0 and matched / rows >= 0.60,
+          f"{matched} of {rows} listed inherited systems matched to SIPRI ({matched / max(rows, 1):.0%}, need >= 60%)")
 
     with open(config.APP_DATA_DIR / "countries.json", encoding="utf-8") as f:
         index = json.load(f)

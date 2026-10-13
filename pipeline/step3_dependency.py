@@ -33,6 +33,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from pipeline import config
 from pipeline.step2_deals import DEALS_PARQUET
 from pipeline.utils.capabilities import CAPABILITY_ORDER, SERVICE_LIFE
+from pipeline.utils.legacy import COVERED, INDEPENDENCE_YEAR, legacy_holdings
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -101,6 +102,29 @@ def deal_record(r) -> dict:
     }
 
 
+def inherited_record(iso3: str, legacy: pd.DataFrame) -> dict | None:
+    """What was added for equipment inherited at independence, with sources."""
+    if iso3 not in COVERED:
+        return None
+    rows = legacy[legacy["iso3"] == iso3]
+    if rows.empty:
+        return {"status": "no_quantities"}
+    matched = rows[rows["family"].notna()].sort_values("tiv", ascending=False)
+    pages = rows.drop_duplicates("page")
+    return {
+        "status": "added",
+        "since": INDEPENDENCE_YEAR,
+        "total": _r(matched["tiv"].sum()),
+        "pages": [{"title": p.page, "revid": int(p.revid)} for p in pages.itertuples()],
+        "unmatched": int(rows["family"].isna().sum()),
+        "rows": [{
+            "system": r.system, "quantity": int(r.quantity), "origin": r.origin, "cap": r.capability,
+            "launchersPerUnit": int(r.launchers_per_unit), "recordedUnits": _r(r.recorded_units),
+            "countedUnits": _r(r.counted_units), "unitTiv": _r(r.unit_tiv, 2), "tiv": _r(r.tiv),
+        } for r in matched.itertuples()],
+    }
+
+
 def build():
     deals = pd.read_parquet(DEALS_PARQUET)
     data_year = int(deals["data_year"].iloc[0])
@@ -114,6 +138,12 @@ def build():
     deals["tiv_in_service"] = deals["deal_id"].map(live_now.groupby("deal_id")["tiv"].sum()).fillna(0.0)
 
     years = range(SERIES_START, data_year + 1)
+
+    # Equipment successor states inherited at independence (not in SIPRI)
+    legacy = legacy_holdings(deals)
+    legacy_matched = legacy[legacy["family"].notna() & (legacy["tiv"] > 0)]
+    logger.info("Inherited equipment: %d of %d Wikipedia rows matched to SIPRI systems, %.0f TIV across %d countries",
+                legacy["family"].notna().sum(), len(legacy), legacy_matched["tiv"].sum(), legacy_matched["iso3"].nunique())
 
     # Names: latest SIPRI spelling for each code
     buyer_names = deals.sort_values("order_year").groupby("buyer_successor_iso3")["buyer"].last().to_dict()
@@ -132,6 +162,14 @@ def build():
     for iso3, cdeals in deals.groupby("buyer_successor_iso3"):
         ctr = tranches[tranches["buyer_successor_iso3"] == iso3]
         cser = in_service_series(ctr, years)
+        cleg = legacy_matched[legacy_matched["iso3"] == iso3]
+        if not cleg.empty:
+            # Observed in service today; assumed held since independence
+            inherited = pd.concat([
+                cleg.assign(at_year=y)[["origin", "capability", "tiv", "at_year"]]
+                for y in years if y >= INDEPENDENCE_YEAR
+            ]).rename(columns={"origin": "design_origin_iso3"})
+            cser = pd.concat([cser, inherited], ignore_index=True)
         has_holdings = not cser.empty and cser[cser["at_year"] == data_year]["tiv"].sum() > 0
         has_orders = cdeals["tiv_outstanding"].fillna(0).sum() > 0
         if cser.empty or not (has_holdings or has_orders):
@@ -197,6 +235,7 @@ def build():
             # deal records are left out of public builds unless explicitly enabled.
             "deals": [deal_record(r) for r in relevant.itertuples()] if INCLUDE_DEALS else None,
             "quality": {"shareUncertain": _r(n_unc, 3), "nDeals": int(len(relevant))},
+            "inherited": inherited_record(iso3, legacy),
         }
         with open(country_dir / f"{iso3}.json", "w", encoding="utf-8") as f:
             json.dump(profile, f, separators=(",", ":"), ensure_ascii=False)

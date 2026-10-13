@@ -78,6 +78,27 @@ export default function Method() {
         the last five years of data. Older incomplete deals are usually cancelled or unrecorded, so they are left out.
       </p>
 
+      <H id="inherited">Equipment inherited at independence</H>
+      <p className="mt-3">
+        When the USSR and Yugoslavia broke up, their successor states took over the equipment on their territory. No
+        transfer was ever recorded, so SIPRI — and an estimate built only on SIPRI — cannot see it, and the Russian/Soviet
+        share for these countries would be badly understated.
+      </p>
+      <p className="mt-3">
+        For 16 successor states we read Wikipedia’s equipment lists (CC BY-SA 4.0, mostly citing IISS <em>Military
+        Balance</em>) and keep Soviet- and Yugoslav-origin systems listed as in service today. Each is matched to the same
+        system in SIPRI’s data, which gives its capability area and unit value; it is valued as second-hand (×0.4, SIPRI’s own
+        convention). Long-range air-defence systems are listed per launcher but valued by SIPRI per battalion, so launchers
+        are converted (e.g. 12 per S-300 battalion). Anything SIPRI already counts as in service for that country is
+        subtracted, so nothing is counted twice. Items SIPRI does not track (trucks, small arms, light mortars) drop out.
+      </p>
+      <p className="mt-3">
+        Quantities exist for 12 of the 16; Kyrgyzstan, Turkmenistan, Montenegro and Croatia list systems without counts and
+        are not adjusted. Today’s counts are applied back to 1992, so earlier years are approximate — especially for Ukraine,
+        whose Soviet stocks have been heavily used up since 2022. Every country page lists exactly what was added and links
+        the page revision it came from.
+      </p>
+
       <H id="validation">How well it matches an independent source</H>
       <Validation />
 
@@ -86,8 +107,8 @@ export default function Method() {
         <li><strong>Imported equipment only.</strong> Weapons a country builds itself are not covered, so large producers
           (the US, Russia, China, France, India in part) look far more import-dependent here than they are.</li>
         <li><strong>Major conventional weapons only.</strong> SIPRI excludes small arms, light weapons and most ammunition.</li>
-        <li><strong>Inherited equipment is invisible.</strong> States that took over Soviet or Yugoslav stocks at
-          independence never “imported” them, so their Russian/Soviet dependency is understated here.</li>
+        <li><strong>Inherited equipment is approximate.</strong> It is added from Wikipedia counts for 12 successor states
+          (see above); four have no counts and remain understated.</li>
         <li><strong>Re-exports are not subtracted.</strong> Equipment a country later passed on (for example, Soviet-era kit given to
           Ukraine) still counts until its service life runs out.</li>
         <li><strong>Uncertain figures.</strong> SIPRI flags roughly half of all deals as having an uncertain order year or unit count.</li>

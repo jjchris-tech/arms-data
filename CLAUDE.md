@@ -15,12 +15,14 @@ pipeline/                 Python data pipeline (run from project root)
   checks.py               sanity checks against known facts; run_all.py fails loudly if one breaks
   build_factbook_reference.py  one-off: regenerates data/reference/factbook_equipment.csv (CC0, committed)
   utils/factbook.py       parses Factbook prose into main / mentioned origins
+  build_legacy_reference.py  one-off: Wikipedia equipment lists -> data/reference/legacy_holdings.csv (CC BY-SA, needs lxml)
+  utils/legacy.py         inherited Soviet/Yugoslav kit: match to SIPRI families, subtract SIPRI-recorded units, value x0.4
   utils/design_origin.py  who designed a system (not who sold it); USSR -> RUS; Antonov/Ivchenko -> UKR
   utils/capabilities.py   weapon_desc -> capability area + service life
 dashboard/                React 19 + Vite + Tailwind v4 + Recharts, HashRouter, base path /arms-data/
   src/lib/profile.js      all share/aggregation maths for the UI lives here, not in components
 data/raw/                 sipri-trade-register.csv (input), SIPRI milex xlsx (unused, kept for later)
-data/reference/           public-domain reference data, safe to commit (Factbook equipment text)
+data/reference/           openly licensed reference data, safe to commit (Factbook CC0, Wikipedia CC BY-SA)
 docs/data-sources.md      researched candidate datasets for future features
 ```
 
@@ -48,7 +50,9 @@ attribution: "Information from the Stockholm International Peace Research Instit
 - Re-exports are not subtracted from the exporter's in-service estimate (known limitation).
 - After changing classification or origin logic, read the `report()` output of step 2 and run `checks.py`.
 - Validation (step 4) is an out-of-sample check: don't tune model parameters (e.g. service lives) to raise the
-  Factbook agreement score, or the published score stops meaning anything. Known gap: inherited Soviet/Yugoslav stocks.
+  Factbook agreement score, or the published score stops meaning anything.
+- Inherited stocks (successor states): Wikipedia counts launchers, SIPRI values long-range SAMs per battalion ->
+  LAUNCHERS_PER_UNIT in utils/legacy.py. KGZ, TKM, MNE, HRV pages have no quantities, so they stay unadjusted.
 
 ## Working conventions
 

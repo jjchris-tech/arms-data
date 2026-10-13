@@ -6,6 +6,7 @@ import { headline, holdingsAt, sharesOf } from '../lib/profile'
 import DealsTable from './DealsTable'
 import ExposurePanel from './ExposurePanel'
 import FactbookCheck from './FactbookCheck'
+import InheritedPanel from './InheritedPanel'
 import HoldingsChart from './HoldingsChart'
 import OrdersPanel from './OrdersPanel'
 
@@ -25,9 +26,10 @@ function Headline({ profile }) {
     return <p className="mt-3 text-lg text-stone-600 dark:text-stone-400">No imported equipment from the deals SIPRI records is estimated to still be in service.</p>
   }
   const name = originInSentence(profile.origins, h.top)
+  const what = profile.inherited?.status === 'added' ? 'imported and inherited weapons' : 'imported weapons'
   return (
     <p className="mt-3 text-lg leading-relaxed max-w-3xl text-stone-700 dark:text-stone-300">
-      <strong className="text-stone-900 dark:text-stone-100">{pct(h.topShare)}</strong> of {profile.name}’s imported weapons still in
+      <strong className="text-stone-900 dark:text-stone-100">{pct(h.topShare)}</strong> of {profile.name}’s {what} still in
       service were designed in <strong className="text-stone-900 dark:text-stone-100">{name}</strong>
       {h.thenShare != null && Math.abs(h.thenShare - h.topShare) >= 0.03 && <>, {h.thenShare > h.topShare ? 'down' : 'up'} from {pct(h.thenShare)} in 2000</>}.
       {h.worst && h.worst.share >= 0.5 && h.worst.share > h.topShare + 0.05 && (
@@ -62,6 +64,7 @@ export default function CountryPage() {
 
   // Deal records are absent from public builds until SIPRI permits republishing them
   const hasDeals = Array.isArray(profile.deals)
+  const hasInherited = profile.inherited?.status === 'added'
 
   const showDeals = patch => {
     setFilter(f => ({ ...f, ...patch }))
@@ -75,12 +78,18 @@ export default function CountryPage() {
       <Headline profile={profile} />
 
       <Section
-        title="What its imported arsenal is made of"
-        subtitle={`Estimated share of imported equipment in service each year, by the country that designed it. ${profile.seriesStart}–${profile.dataYear}.`}
+        title={hasInherited ? 'What its arsenal is made of' : 'What its imported arsenal is made of'}
+        subtitle={`Estimated share of ${hasInherited ? 'imported and inherited' : 'imported'} equipment in service each year, by the country that designed it. ${profile.seriesStart}–${profile.dataYear}.`}
       >
         <HoldingsChart profile={profile} />
         <div className="mt-6"><FactbookCheck profile={profile} /></div>
       </Section>
+
+      {profile.inherited && (
+        <Section title="Inherited at independence">
+          <InheritedPanel profile={profile} />
+        </Section>
+      )}
 
       {origin && (
         <Section

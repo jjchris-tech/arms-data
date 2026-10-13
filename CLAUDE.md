@@ -24,6 +24,15 @@ docs/data-sources.md      researched candidate datasets for future features
 
 - Pipeline: `python pipeline/run_all.py` (~25 s). Deps: `pip install -r pipeline/requirements.txt`
 - App: `cd dashboard && npm run dev` (port 5173) / `npm run build`. Preview config: `.claude/launch.json` -> `dashboard`
+- Deploy: push to `main` on github.com/jjchris-tech/arms-data -> `.github/workflows/deploy.yml` re-downloads SIPRI,
+  runs the pipeline + checks, builds, publishes to https://jjchris-tech.github.io/arms-data/ (also runs monthly).
+  `gh` is at `C:\Program Files\GitHub CLI\gh.exe` (may not be on PATH in older shells).
+
+## Licensing (SIPRI)
+
+Republishing >10% of SIPRI data needs SIPRI's permission. Public builds set `ARMS_INCLUDE_DEALS=0` (no deal records);
+local builds include them. Never commit `dashboard/public/data/` or `data/raw/` — the repo is public. Required
+attribution: "Information from the Stockholm International Peace Research Institute (SIPRI), <URL>".
 
 ## Data rules that are easy to get wrong
 

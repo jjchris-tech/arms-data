@@ -1,0 +1,1915 @@
+iso3,country_name,year,electoral_democracy,region
+AFG,Afghanistan,2015,0.348,Asia
+AFG,Afghanistan,2016,0.34,Asia
+AFG,Afghanistan,2017,0.334,Asia
+AFG,Afghanistan,2018,0.33,Asia
+AFG,Afghanistan,2019,0.329,Asia
+AFG,Afghanistan,2020,0.336,Asia
+AFG,Afghanistan,2021,0.144,Asia
+AFG,Afghanistan,2022,0.076,Asia
+AFG,Afghanistan,2023,0.073,Asia
+AFG,Afghanistan,2024,0.08,Asia
+AFG,Afghanistan,2025,0.069,Asia
+ALB,Albania,2015,0.518,Europe
+ALB,Albania,2016,0.52,Europe
+ALB,Albania,2017,0.536,Europe
+ALB,Albania,2018,0.524,Europe
+ALB,Albania,2019,0.511,Europe
+ALB,Albania,2020,0.528,Europe
+ALB,Albania,2021,0.526,Europe
+ALB,Albania,2022,0.517,Europe
+ALB,Albania,2023,0.505,Europe
+ALB,Albania,2024,0.51,Europe
+ALB,Albania,2025,0.484,Europe
+DZA,Algeria,2015,0.331,Africa
+DZA,Algeria,2016,0.308,Africa
+DZA,Algeria,2017,0.309,Africa
+DZA,Algeria,2018,0.305,Africa
+DZA,Algeria,2019,0.293,Africa
+DZA,Algeria,2020,0.279,Africa
+DZA,Algeria,2021,0.282,Africa
+DZA,Algeria,2022,0.269,Africa
+DZA,Algeria,2023,0.265,Africa
+DZA,Algeria,2024,0.26,Africa
+DZA,Algeria,2025,0.265,Africa
+AGO,Angola,2015,0.29,Africa
+AGO,Angola,2016,0.29,Africa
+AGO,Angola,2017,0.307,Africa
+AGO,Angola,2018,0.35,Africa
+AGO,Angola,2019,0.347,Africa
+AGO,Angola,2020,0.336,Africa
+AGO,Angola,2021,0.325,Africa
+AGO,Angola,2022,0.326,Africa
+AGO,Angola,2023,0.329,Africa
+AGO,Angola,2024,0.342,Africa
+AGO,Angola,2025,0.344,Africa
+ARG,Argentina,2015,0.765,South America
+ARG,Argentina,2016,0.751,South America
+ARG,Argentina,2017,0.751,South America
+ARG,Argentina,2018,0.78,South America
+ARG,Argentina,2019,0.779,South America
+ARG,Argentina,2020,0.797,South America
+ARG,Argentina,2021,0.796,South America
+ARG,Argentina,2022,0.831,South America
+ARG,Argentina,2023,0.838,South America
+ARG,Argentina,2024,0.721,South America
+ARG,Argentina,2025,0.69,South America
+ARM,Armenia,2015,0.346,Asia
+ARM,Armenia,2016,0.348,Asia
+ARM,Armenia,2017,0.381,Asia
+ARM,Armenia,2018,0.524,Asia
+ARM,Armenia,2019,0.796,Asia
+ARM,Armenia,2020,0.781,Asia
+ARM,Armenia,2021,0.724,Asia
+ARM,Armenia,2022,0.654,Asia
+ARM,Armenia,2023,0.631,Asia
+ARM,Armenia,2024,0.625,Asia
+ARM,Armenia,2025,0.614,Asia
+AUS,Australia,2015,0.865,Oceania
+AUS,Australia,2016,0.871,Oceania
+AUS,Australia,2017,0.871,Oceania
+AUS,Australia,2018,0.86,Oceania
+AUS,Australia,2019,0.825,Oceania
+AUS,Australia,2020,0.837,Oceania
+AUS,Australia,2021,0.828,Oceania
+AUS,Australia,2022,0.846,Oceania
+AUS,Australia,2023,0.851,Oceania
+AUS,Australia,2024,0.848,Oceania
+AUS,Australia,2025,0.844,Oceania
+AUT,Austria,2015,0.873,Europe
+AUT,Austria,2016,0.848,Europe
+AUT,Austria,2017,0.851,Europe
+AUT,Austria,2018,0.851,Europe
+AUT,Austria,2019,0.862,Europe
+AUT,Austria,2020,0.858,Europe
+AUT,Austria,2021,0.854,Europe
+AUT,Austria,2022,0.841,Europe
+AUT,Austria,2023,0.848,Europe
+AUT,Austria,2024,0.84,Europe
+AUT,Austria,2025,0.839,Europe
+AZE,Azerbaijan,2015,0.193,Asia
+AZE,Azerbaijan,2016,0.199,Asia
+AZE,Azerbaijan,2017,0.202,Asia
+AZE,Azerbaijan,2018,0.192,Asia
+AZE,Azerbaijan,2019,0.195,Asia
+AZE,Azerbaijan,2020,0.194,Asia
+AZE,Azerbaijan,2021,0.193,Asia
+AZE,Azerbaijan,2022,0.185,Asia
+AZE,Azerbaijan,2023,0.185,Asia
+AZE,Azerbaijan,2024,0.174,Asia
+AZE,Azerbaijan,2025,0.171,Asia
+BHR,Bahrain,2015,0.144,Asia
+BHR,Bahrain,2016,0.139,Asia
+BHR,Bahrain,2017,0.133,Asia
+BHR,Bahrain,2018,0.13,Asia
+BHR,Bahrain,2019,0.132,Asia
+BHR,Bahrain,2020,0.132,Asia
+BHR,Bahrain,2021,0.134,Asia
+BHR,Bahrain,2022,0.135,Asia
+BHR,Bahrain,2023,0.138,Asia
+BHR,Bahrain,2024,0.138,Asia
+BHR,Bahrain,2025,0.139,Asia
+BGD,Bangladesh,2015,0.275,Asia
+BGD,Bangladesh,2016,0.269,Asia
+BGD,Bangladesh,2017,0.265,Asia
+BGD,Bangladesh,2018,0.252,Asia
+BGD,Bangladesh,2019,0.251,Asia
+BGD,Bangladesh,2020,0.255,Asia
+BGD,Bangladesh,2021,0.255,Asia
+BGD,Bangladesh,2022,0.261,Asia
+BGD,Bangladesh,2023,0.253,Asia
+BGD,Bangladesh,2024,0.225,Asia
+BGD,Bangladesh,2025,0.195,Asia
+BRB,Barbados,2015,0.776,North America
+BRB,Barbados,2016,0.776,North America
+BRB,Barbados,2017,0.773,North America
+BRB,Barbados,2018,0.776,North America
+BRB,Barbados,2019,0.792,North America
+BRB,Barbados,2020,0.811,North America
+BRB,Barbados,2021,0.807,North America
+BRB,Barbados,2022,0.802,North America
+BRB,Barbados,2023,0.802,North America
+BRB,Barbados,2024,0.802,North America
+BRB,Barbados,2025,0.797,North America
+BLR,Belarus,2015,0.247,Europe
+BLR,Belarus,2016,0.256,Europe
+BLR,Belarus,2017,0.254,Europe
+BLR,Belarus,2018,0.252,Europe
+BLR,Belarus,2019,0.259,Europe
+BLR,Belarus,2020,0.208,Europe
+BLR,Belarus,2021,0.172,Europe
+BLR,Belarus,2022,0.171,Europe
+BLR,Belarus,2023,0.157,Europe
+BLR,Belarus,2024,0.16,Europe
+BLR,Belarus,2025,0.163,Europe
+BEL,Belgium,2015,0.901,Europe
+BEL,Belgium,2016,0.901,Europe
+BEL,Belgium,2017,0.9,Europe
+BEL,Belgium,2018,0.9,Europe
+BEL,Belgium,2019,0.901,Europe
+BEL,Belgium,2020,0.897,Europe
+BEL,Belgium,2021,0.897,Europe
+BEL,Belgium,2022,0.895,Europe
+BEL,Belgium,2023,0.895,Europe
+BEL,Belgium,2024,0.891,Europe
+BEL,Belgium,2025,0.889,Europe
+BEN,Benin,2015,0.652,Africa
+BEN,Benin,2016,0.712,Africa
+BEN,Benin,2017,0.713,Africa
+BEN,Benin,2018,0.606,Africa
+BEN,Benin,2019,0.452,Africa
+BEN,Benin,2020,0.408,Africa
+BEN,Benin,2021,0.39,Africa
+BEN,Benin,2022,0.423,Africa
+BEN,Benin,2023,0.487,Africa
+BEN,Benin,2024,0.491,Africa
+BEN,Benin,2025,0.493,Africa
+BTN,Bhutan,2015,0.568,Asia
+BTN,Bhutan,2016,0.558,Asia
+BTN,Bhutan,2017,0.571,Asia
+BTN,Bhutan,2018,0.579,Asia
+BTN,Bhutan,2019,0.598,Asia
+BTN,Bhutan,2020,0.598,Asia
+BTN,Bhutan,2021,0.574,Asia
+BTN,Bhutan,2022,0.558,Asia
+BTN,Bhutan,2023,0.532,Asia
+BTN,Bhutan,2024,0.565,Asia
+BTN,Bhutan,2025,0.566,Asia
+BOL,Bolivia,2015,0.609,South America
+BOL,Bolivia,2016,0.62,South America
+BOL,Bolivia,2017,0.609,South America
+BOL,Bolivia,2018,0.593,South America
+BOL,Bolivia,2019,0.456,South America
+BOL,Bolivia,2020,0.275,South America
+BOL,Bolivia,2021,0.608,South America
+BOL,Bolivia,2022,0.587,South America
+BOL,Bolivia,2023,0.586,South America
+BOL,Bolivia,2024,0.577,South America
+BOL,Bolivia,2025,0.605,South America
+BIH,Bosnia and Herzegovina,2015,0.547,Europe
+BIH,Bosnia and Herzegovina,2016,0.547,Europe
+BIH,Bosnia and Herzegovina,2017,0.541,Europe
+BIH,Bosnia and Herzegovina,2018,0.513,Europe
+BIH,Bosnia and Herzegovina,2019,0.515,Europe
+BIH,Bosnia and Herzegovina,2020,0.517,Europe
+BIH,Bosnia and Herzegovina,2021,0.508,Europe
+BIH,Bosnia and Herzegovina,2022,0.521,Europe
+BIH,Bosnia and Herzegovina,2023,0.502,Europe
+BIH,Bosnia and Herzegovina,2024,0.507,Europe
+BIH,Bosnia and Herzegovina,2025,0.498,Europe
+BWA,Botswana,2015,0.69,Africa
+BWA,Botswana,2016,0.685,Africa
+BWA,Botswana,2017,0.675,Africa
+BWA,Botswana,2018,0.672,Africa
+BWA,Botswana,2019,0.656,Africa
+BWA,Botswana,2020,0.589,Africa
+BWA,Botswana,2021,0.587,Africa
+BWA,Botswana,2022,0.573,Africa
+BWA,Botswana,2023,0.564,Africa
+BWA,Botswana,2024,0.595,Africa
+BWA,Botswana,2025,0.665,Africa
+BRA,Brazil,2015,0.861,South America
+BRA,Brazil,2016,0.781,South America
+BRA,Brazil,2017,0.774,South America
+BRA,Brazil,2018,0.749,South America
+BRA,Brazil,2019,0.691,South America
+BRA,Brazil,2020,0.699,South America
+BRA,Brazil,2021,0.69,South America
+BRA,Brazil,2022,0.699,South America
+BRA,Brazil,2023,0.79,South America
+BRA,Brazil,2024,0.799,South America
+BRA,Brazil,2025,0.784,South America
+BGR,Bulgaria,2015,0.671,Europe
+BGR,Bulgaria,2016,0.667,Europe
+BGR,Bulgaria,2017,0.624,Europe
+BGR,Bulgaria,2018,0.612,Europe
+BGR,Bulgaria,2019,0.609,Europe
+BGR,Bulgaria,2020,0.607,Europe
+BGR,Bulgaria,2021,0.665,Europe
+BGR,Bulgaria,2022,0.679,Europe
+BGR,Bulgaria,2023,0.659,Europe
+BGR,Bulgaria,2024,0.645,Europe
+BGR,Bulgaria,2025,0.599,Europe
+BFA,Burkina Faso,2015,0.376,Africa
+BFA,Burkina Faso,2016,0.683,Africa
+BFA,Burkina Faso,2017,0.683,Africa
+BFA,Burkina Faso,2018,0.666,Africa
+BFA,Burkina Faso,2019,0.657,Africa
+BFA,Burkina Faso,2020,0.662,Africa
+BFA,Burkina Faso,2021,0.634,Africa
+BFA,Burkina Faso,2022,0.275,Africa
+BFA,Burkina Faso,2023,0.212,Africa
+BFA,Burkina Faso,2024,0.154,Africa
+BFA,Burkina Faso,2025,0.134,Africa
+BDI,Burundi,2015,0.196,Africa
+BDI,Burundi,2016,0.166,Africa
+BDI,Burundi,2017,0.157,Africa
+BDI,Burundi,2018,0.157,Africa
+BDI,Burundi,2019,0.159,Africa
+BDI,Burundi,2020,0.168,Africa
+BDI,Burundi,2021,0.181,Africa
+BDI,Burundi,2022,0.189,Africa
+BDI,Burundi,2023,0.186,Africa
+BDI,Burundi,2024,0.178,Africa
+BDI,Burundi,2025,0.185,Africa
+KHM,Cambodia,2015,0.291,Asia
+KHM,Cambodia,2016,0.275,Asia
+KHM,Cambodia,2017,0.234,Asia
+KHM,Cambodia,2018,0.211,Asia
+KHM,Cambodia,2019,0.194,Asia
+KHM,Cambodia,2020,0.191,Asia
+KHM,Cambodia,2021,0.19,Asia
+KHM,Cambodia,2022,0.199,Asia
+KHM,Cambodia,2023,0.189,Asia
+KHM,Cambodia,2024,0.184,Asia
+KHM,Cambodia,2025,0.183,Asia
+CMR,Cameroon,2015,0.324,Africa
+CMR,Cameroon,2016,0.307,Africa
+CMR,Cameroon,2017,0.298,Africa
+CMR,Cameroon,2018,0.293,Africa
+CMR,Cameroon,2019,0.28,Africa
+CMR,Cameroon,2020,0.285,Africa
+CMR,Cameroon,2021,0.282,Africa
+CMR,Cameroon,2022,0.291,Africa
+CMR,Cameroon,2023,0.279,Africa
+CMR,Cameroon,2024,0.277,Africa
+CMR,Cameroon,2025,0.26,Africa
+CAN,Canada,2015,0.807,North America
+CAN,Canada,2016,0.834,North America
+CAN,Canada,2017,0.839,North America
+CAN,Canada,2018,0.84,North America
+CAN,Canada,2019,0.85,North America
+CAN,Canada,2020,0.849,North America
+CAN,Canada,2021,0.843,North America
+CAN,Canada,2022,0.848,North America
+CAN,Canada,2023,0.847,North America
+CAN,Canada,2024,0.841,North America
+CAN,Canada,2025,0.84,North America
+CPV,Cape Verde,2015,0.795,Africa
+CPV,Cape Verde,2016,0.8,Africa
+CPV,Cape Verde,2017,0.797,Africa
+CPV,Cape Verde,2018,0.783,Africa
+CPV,Cape Verde,2019,0.79,Africa
+CPV,Cape Verde,2020,0.793,Africa
+CPV,Cape Verde,2021,0.775,Africa
+CPV,Cape Verde,2022,0.754,Africa
+CPV,Cape Verde,2023,0.75,Africa
+CPV,Cape Verde,2024,0.752,Africa
+CPV,Cape Verde,2025,0.745,Africa
+CAF,Central African Republic,2015,0.284,Africa
+CAF,Central African Republic,2016,0.4,Africa
+CAF,Central African Republic,2017,0.396,Africa
+CAF,Central African Republic,2018,0.406,Africa
+CAF,Central African Republic,2019,0.379,Africa
+CAF,Central African Republic,2020,0.374,Africa
+CAF,Central African Republic,2021,0.343,Africa
+CAF,Central African Republic,2022,0.326,Africa
+CAF,Central African Republic,2023,0.301,Africa
+CAF,Central African Republic,2024,0.299,Africa
+CAF,Central African Republic,2025,0.293,Africa
+TCD,Chad,2015,0.279,Africa
+TCD,Chad,2016,0.28,Africa
+TCD,Chad,2017,0.265,Africa
+TCD,Chad,2018,0.267,Africa
+TCD,Chad,2019,0.27,Africa
+TCD,Chad,2020,0.268,Africa
+TCD,Chad,2021,0.177,Africa
+TCD,Chad,2022,0.145,Africa
+TCD,Chad,2023,0.148,Africa
+TCD,Chad,2024,0.202,Africa
+TCD,Chad,2025,0.242,Africa
+CHL,Chile,2015,0.886,South America
+CHL,Chile,2016,0.886,South America
+CHL,Chile,2017,0.889,South America
+CHL,Chile,2018,0.87,South America
+CHL,Chile,2019,0.829,South America
+CHL,Chile,2020,0.837,South America
+CHL,Chile,2021,0.841,South America
+CHL,Chile,2022,0.833,South America
+CHL,Chile,2023,0.836,South America
+CHL,Chile,2024,0.845,South America
+CHL,Chile,2025,0.839,South America
+CHN,China,2015,0.082,Asia
+CHN,China,2016,0.08,Asia
+CHN,China,2017,0.078,Asia
+CHN,China,2018,0.076,Asia
+CHN,China,2019,0.075,Asia
+CHN,China,2020,0.075,Asia
+CHN,China,2021,0.077,Asia
+CHN,China,2022,0.075,Asia
+CHN,China,2023,0.074,Asia
+CHN,China,2024,0.073,Asia
+CHN,China,2025,0.072,Asia
+COL,Colombia,2015,0.681,South America
+COL,Colombia,2016,0.682,South America
+COL,Colombia,2017,0.68,South America
+COL,Colombia,2018,0.666,South America
+COL,Colombia,2019,0.651,South America
+COL,Colombia,2020,0.643,South America
+COL,Colombia,2021,0.654,South America
+COL,Colombia,2022,0.696,South America
+COL,Colombia,2023,0.711,South America
+COL,Colombia,2024,0.698,South America
+COL,Colombia,2025,0.679,South America
+COM,Comoros,2015,0.395,Africa
+COM,Comoros,2016,0.385,Africa
+COM,Comoros,2017,0.38,Africa
+COM,Comoros,2018,0.367,Africa
+COM,Comoros,2019,0.305,Africa
+COM,Comoros,2020,0.28,Africa
+COM,Comoros,2021,0.28,Africa
+COM,Comoros,2022,0.272,Africa
+COM,Comoros,2023,0.264,Africa
+COM,Comoros,2024,0.276,Africa
+COM,Comoros,2025,0.293,Africa
+COG,Congo,2015,0.249,Africa
+COG,Congo,2016,0.247,Africa
+COG,Congo,2017,0.252,Africa
+COG,Congo,2018,0.258,Africa
+COG,Congo,2019,0.25,Africa
+COG,Congo,2020,0.257,Africa
+COG,Congo,2021,0.254,Africa
+COG,Congo,2022,0.243,Africa
+COG,Congo,2023,0.253,Africa
+COG,Congo,2024,0.255,Africa
+COG,Congo,2025,0.243,Africa
+CRI,Costa Rica,2015,0.906,North America
+CRI,Costa Rica,2016,0.902,North America
+CRI,Costa Rica,2017,0.898,North America
+CRI,Costa Rica,2018,0.89,North America
+CRI,Costa Rica,2019,0.893,North America
+CRI,Costa Rica,2020,0.895,North America
+CRI,Costa Rica,2021,0.894,North America
+CRI,Costa Rica,2022,0.866,North America
+CRI,Costa Rica,2023,0.862,North America
+CRI,Costa Rica,2024,0.862,North America
+CRI,Costa Rica,2025,0.862,North America
+CIV,Cote d'Ivoire,2015,0.473,Africa
+CIV,Cote d'Ivoire,2016,0.529,Africa
+CIV,Cote d'Ivoire,2017,0.539,Africa
+CIV,Cote d'Ivoire,2018,0.54,Africa
+CIV,Cote d'Ivoire,2019,0.534,Africa
+CIV,Cote d'Ivoire,2020,0.499,Africa
+CIV,Cote d'Ivoire,2021,0.435,Africa
+CIV,Cote d'Ivoire,2022,0.443,Africa
+CIV,Cote d'Ivoire,2023,0.445,Africa
+CIV,Cote d'Ivoire,2024,0.429,Africa
+CIV,Cote d'Ivoire,2025,0.394,Africa
+HRV,Croatia,2015,0.816,Europe
+HRV,Croatia,2016,0.765,Europe
+HRV,Croatia,2017,0.739,Europe
+HRV,Croatia,2018,0.729,Europe
+HRV,Croatia,2019,0.734,Europe
+HRV,Croatia,2020,0.756,Europe
+HRV,Croatia,2021,0.747,Europe
+HRV,Croatia,2022,0.724,Europe
+HRV,Croatia,2023,0.725,Europe
+HRV,Croatia,2024,0.71,Europe
+HRV,Croatia,2025,0.686,Europe
+CUB,Cuba,2015,0.168,North America
+CUB,Cuba,2016,0.169,North America
+CUB,Cuba,2017,0.168,North America
+CUB,Cuba,2018,0.177,North America
+CUB,Cuba,2019,0.181,North America
+CUB,Cuba,2020,0.178,North America
+CUB,Cuba,2021,0.178,North America
+CUB,Cuba,2022,0.178,North America
+CUB,Cuba,2023,0.175,North America
+CUB,Cuba,2024,0.178,North America
+CUB,Cuba,2025,0.176,North America
+CYP,Cyprus,2015,0.851,Europe
+CYP,Cyprus,2016,0.851,Europe
+CYP,Cyprus,2017,0.84,Europe
+CYP,Cyprus,2018,0.836,Europe
+CYP,Cyprus,2019,0.84,Europe
+CYP,Cyprus,2020,0.807,Europe
+CYP,Cyprus,2021,0.795,Europe
+CYP,Cyprus,2022,0.779,Europe
+CYP,Cyprus,2023,0.777,Europe
+CYP,Cyprus,2024,0.777,Europe
+CYP,Cyprus,2025,0.773,Europe
+CZE,Czechia,2015,0.852,Europe
+CZE,Czechia,2016,0.852,Europe
+CZE,Czechia,2017,0.833,Europe
+CZE,Czechia,2018,0.81,Europe
+CZE,Czechia,2019,0.8,Europe
+CZE,Czechia,2020,0.806,Europe
+CZE,Czechia,2021,0.789,Europe
+CZE,Czechia,2022,0.854,Europe
+CZE,Czechia,2023,0.863,Europe
+CZE,Czechia,2024,0.865,Europe
+CZE,Czechia,2025,0.849,Europe
+COD,Democratic Republic of Congo,2015,0.316,Africa
+COD,Democratic Republic of Congo,2016,0.305,Africa
+COD,Democratic Republic of Congo,2017,0.304,Africa
+COD,Democratic Republic of Congo,2018,0.306,Africa
+COD,Democratic Republic of Congo,2019,0.344,Africa
+COD,Democratic Republic of Congo,2020,0.347,Africa
+COD,Democratic Republic of Congo,2021,0.342,Africa
+COD,Democratic Republic of Congo,2022,0.336,Africa
+COD,Democratic Republic of Congo,2023,0.333,Africa
+COD,Democratic Republic of Congo,2024,0.308,Africa
+COD,Democratic Republic of Congo,2025,0.306,Africa
+DNK,Denmark,2015,0.921,Europe
+DNK,Denmark,2016,0.918,Europe
+DNK,Denmark,2017,0.918,Europe
+DNK,Denmark,2018,0.918,Europe
+DNK,Denmark,2019,0.916,Europe
+DNK,Denmark,2020,0.915,Europe
+DNK,Denmark,2021,0.915,Europe
+DNK,Denmark,2022,0.915,Europe
+DNK,Denmark,2023,0.917,Europe
+DNK,Denmark,2024,0.917,Europe
+DNK,Denmark,2025,0.913,Europe
+DJI,Djibouti,2015,0.245,Africa
+DJI,Djibouti,2016,0.243,Africa
+DJI,Djibouti,2017,0.243,Africa
+DJI,Djibouti,2018,0.25,Africa
+DJI,Djibouti,2019,0.251,Africa
+DJI,Djibouti,2020,0.25,Africa
+DJI,Djibouti,2021,0.251,Africa
+DJI,Djibouti,2022,0.25,Africa
+DJI,Djibouti,2023,0.25,Africa
+DJI,Djibouti,2024,0.25,Africa
+DJI,Djibouti,2025,0.25,Africa
+DOM,Dominican Republic,2015,0.59,North America
+DOM,Dominican Republic,2016,0.571,North America
+DOM,Dominican Republic,2017,0.559,North America
+DOM,Dominican Republic,2018,0.573,North America
+DOM,Dominican Republic,2019,0.569,North America
+DOM,Dominican Republic,2020,0.656,North America
+DOM,Dominican Republic,2021,0.694,North America
+DOM,Dominican Republic,2022,0.692,North America
+DOM,Dominican Republic,2023,0.692,North America
+DOM,Dominican Republic,2024,0.71,North America
+DOM,Dominican Republic,2025,0.735,North America
+TLS,East Timor,2015,0.644,Asia
+TLS,East Timor,2016,0.628,Asia
+TLS,East Timor,2017,0.671,Asia
+TLS,East Timor,2018,0.689,Asia
+TLS,East Timor,2019,0.703,Asia
+TLS,East Timor,2020,0.679,Asia
+TLS,East Timor,2021,0.693,Asia
+TLS,East Timor,2022,0.709,Asia
+TLS,East Timor,2023,0.714,Asia
+TLS,East Timor,2024,0.734,Asia
+TLS,East Timor,2025,0.736,Asia
+ECU,Ecuador,2015,0.533,South America
+ECU,Ecuador,2016,0.54,South America
+ECU,Ecuador,2017,0.552,South America
+ECU,Ecuador,2018,0.641,South America
+ECU,Ecuador,2019,0.617,South America
+ECU,Ecuador,2020,0.626,South America
+ECU,Ecuador,2021,0.625,South America
+ECU,Ecuador,2022,0.661,South America
+ECU,Ecuador,2023,0.641,South America
+ECU,Ecuador,2024,0.641,South America
+ECU,Ecuador,2025,0.607,South America
+EGY,Egypt,2015,0.156,Africa
+EGY,Egypt,2016,0.178,Africa
+EGY,Egypt,2017,0.178,Africa
+EGY,Egypt,2018,0.176,Africa
+EGY,Egypt,2019,0.174,Africa
+EGY,Egypt,2020,0.176,Africa
+EGY,Egypt,2021,0.18,Africa
+EGY,Egypt,2022,0.183,Africa
+EGY,Egypt,2023,0.187,Africa
+EGY,Egypt,2024,0.186,Africa
+EGY,Egypt,2025,0.187,Africa
+SLV,El Salvador,2015,0.658,North America
+SLV,El Salvador,2016,0.659,North America
+SLV,El Salvador,2017,0.672,North America
+SLV,El Salvador,2018,0.631,North America
+SLV,El Salvador,2019,0.599,North America
+SLV,El Salvador,2020,0.518,North America
+SLV,El Salvador,2021,0.403,North America
+SLV,El Salvador,2022,0.378,North America
+SLV,El Salvador,2023,0.377,North America
+SLV,El Salvador,2024,0.335,North America
+SLV,El Salvador,2025,0.321,North America
+GNQ,Equatorial Guinea,2015,0.178,Africa
+GNQ,Equatorial Guinea,2016,0.18,Africa
+GNQ,Equatorial Guinea,2017,0.174,Africa
+GNQ,Equatorial Guinea,2018,0.177,Africa
+GNQ,Equatorial Guinea,2019,0.178,Africa
+GNQ,Equatorial Guinea,2020,0.175,Africa
+GNQ,Equatorial Guinea,2021,0.172,Africa
+GNQ,Equatorial Guinea,2022,0.173,Africa
+GNQ,Equatorial Guinea,2023,0.183,Africa
+GNQ,Equatorial Guinea,2024,0.176,Africa
+GNQ,Equatorial Guinea,2025,0.172,Africa
+ERI,Eritrea,2015,0.069,Africa
+ERI,Eritrea,2016,0.069,Africa
+ERI,Eritrea,2017,0.069,Africa
+ERI,Eritrea,2018,0.068,Africa
+ERI,Eritrea,2019,0.07,Africa
+ERI,Eritrea,2020,0.069,Africa
+ERI,Eritrea,2021,0.071,Africa
+ERI,Eritrea,2022,0.071,Africa
+ERI,Eritrea,2023,0.068,Africa
+ERI,Eritrea,2024,0.069,Africa
+ERI,Eritrea,2025,0.069,Africa
+EST,Estonia,2015,0.894,Europe
+EST,Estonia,2016,0.907,Europe
+EST,Estonia,2017,0.907,Europe
+EST,Estonia,2018,0.906,Europe
+EST,Estonia,2019,0.898,Europe
+EST,Estonia,2020,0.897,Europe
+EST,Estonia,2021,0.9,Europe
+EST,Estonia,2022,0.896,Europe
+EST,Estonia,2023,0.893,Europe
+EST,Estonia,2024,0.893,Europe
+EST,Estonia,2025,0.887,Europe
+SWZ,Eswatini,2015,0.131,Africa
+SWZ,Eswatini,2016,0.131,Africa
+SWZ,Eswatini,2017,0.132,Africa
+SWZ,Eswatini,2018,0.132,Africa
+SWZ,Eswatini,2019,0.133,Africa
+SWZ,Eswatini,2020,0.132,Africa
+SWZ,Eswatini,2021,0.12,Africa
+SWZ,Eswatini,2022,0.117,Africa
+SWZ,Eswatini,2023,0.121,Africa
+SWZ,Eswatini,2024,0.129,Africa
+SWZ,Eswatini,2025,0.128,Africa
+ETH,Ethiopia,2015,0.228,Africa
+ETH,Ethiopia,2016,0.226,Africa
+ETH,Ethiopia,2017,0.228,Africa
+ETH,Ethiopia,2018,0.271,Africa
+ETH,Ethiopia,2019,0.329,Africa
+ETH,Ethiopia,2020,0.32,Africa
+ETH,Ethiopia,2021,0.29,Africa
+ETH,Ethiopia,2022,0.3,Africa
+ETH,Ethiopia,2023,0.279,Africa
+ETH,Ethiopia,2024,0.26,Africa
+ETH,Ethiopia,2025,0.257,Africa
+FJI,Fiji,2015,0.385,Oceania
+FJI,Fiji,2016,0.397,Oceania
+FJI,Fiji,2017,0.4,Oceania
+FJI,Fiji,2018,0.403,Oceania
+FJI,Fiji,2019,0.391,Oceania
+FJI,Fiji,2020,0.411,Oceania
+FJI,Fiji,2021,0.4,Oceania
+FJI,Fiji,2022,0.398,Oceania
+FJI,Fiji,2023,0.509,Oceania
+FJI,Fiji,2024,0.514,Oceania
+FJI,Fiji,2025,0.507,Oceania
+FIN,Finland,2015,0.869,Europe
+FIN,Finland,2016,0.869,Europe
+FIN,Finland,2017,0.873,Europe
+FIN,Finland,2018,0.884,Europe
+FIN,Finland,2019,0.881,Europe
+FIN,Finland,2020,0.88,Europe
+FIN,Finland,2021,0.871,Europe
+FIN,Finland,2022,0.869,Europe
+FIN,Finland,2023,0.853,Europe
+FIN,Finland,2024,0.827,Europe
+FIN,Finland,2025,0.852,Europe
+FRA,France,2015,0.883,Europe
+FRA,France,2016,0.883,Europe
+FRA,France,2017,0.886,Europe
+FRA,France,2018,0.874,Europe
+FRA,France,2019,0.866,Europe
+FRA,France,2020,0.866,Europe
+FRA,France,2021,0.868,Europe
+FRA,France,2022,0.875,Europe
+FRA,France,2023,0.871,Europe
+FRA,France,2024,0.864,Europe
+FRA,France,2025,0.865,Europe
+GAB,Gabon,2015,0.375,Africa
+GAB,Gabon,2016,0.378,Africa
+GAB,Gabon,2017,0.398,Africa
+GAB,Gabon,2018,0.386,Africa
+GAB,Gabon,2019,0.377,Africa
+GAB,Gabon,2020,0.368,Africa
+GAB,Gabon,2021,0.368,Africa
+GAB,Gabon,2022,0.362,Africa
+GAB,Gabon,2023,0.325,Africa
+GAB,Gabon,2024,0.227,Africa
+GAB,Gabon,2025,0.302,Africa
+GMB,Gambia,2015,0.244,Africa
+GMB,Gambia,2016,0.25,Africa
+GMB,Gambia,2017,0.498,Africa
+GMB,Gambia,2018,0.538,Africa
+GMB,Gambia,2019,0.524,Africa
+GMB,Gambia,2020,0.496,Africa
+GMB,Gambia,2021,0.507,Africa
+GMB,Gambia,2022,0.621,Africa
+GMB,Gambia,2023,0.635,Africa
+GMB,Gambia,2024,0.63,Africa
+GMB,Gambia,2025,0.641,Africa
+GEO,Georgia,2015,0.668,Asia
+GEO,Georgia,2016,0.685,Asia
+GEO,Georgia,2017,0.669,Asia
+GEO,Georgia,2018,0.663,Asia
+GEO,Georgia,2019,0.627,Asia
+GEO,Georgia,2020,0.616,Asia
+GEO,Georgia,2021,0.604,Asia
+GEO,Georgia,2022,0.607,Asia
+GEO,Georgia,2023,0.591,Asia
+GEO,Georgia,2024,0.48,Asia
+GEO,Georgia,2025,0.401,Asia
+DEU,Germany,2015,0.883,Europe
+DEU,Germany,2016,0.888,Europe
+DEU,Germany,2017,0.889,Europe
+DEU,Germany,2018,0.881,Europe
+DEU,Germany,2019,0.878,Europe
+DEU,Germany,2020,0.87,Europe
+DEU,Germany,2021,0.863,Europe
+DEU,Germany,2022,0.855,Europe
+DEU,Germany,2023,0.855,Europe
+DEU,Germany,2024,0.825,Europe
+DEU,Germany,2025,0.828,Europe
+GHA,Ghana,2015,0.739,Africa
+GHA,Ghana,2016,0.725,Africa
+GHA,Ghana,2017,0.739,Africa
+GHA,Ghana,2018,0.735,Africa
+GHA,Ghana,2019,0.718,Africa
+GHA,Ghana,2020,0.718,Africa
+GHA,Ghana,2021,0.659,Africa
+GHA,Ghana,2022,0.663,Africa
+GHA,Ghana,2023,0.657,Africa
+GHA,Ghana,2024,0.665,Africa
+GHA,Ghana,2025,0.711,Africa
+GRC,Greece,2015,0.88,Europe
+GRC,Greece,2016,0.872,Europe
+GRC,Greece,2017,0.868,Europe
+GRC,Greece,2018,0.859,Europe
+GRC,Greece,2019,0.864,Europe
+GRC,Greece,2020,0.788,Europe
+GRC,Greece,2021,0.76,Europe
+GRC,Greece,2022,0.762,Europe
+GRC,Greece,2023,0.735,Europe
+GRC,Greece,2024,0.744,Europe
+GRC,Greece,2025,0.741,Europe
+GTM,Guatemala,2015,0.587,North America
+GTM,Guatemala,2016,0.626,North America
+GTM,Guatemala,2017,0.621,North America
+GTM,Guatemala,2018,0.602,North America
+GTM,Guatemala,2019,0.597,North America
+GTM,Guatemala,2020,0.589,North America
+GTM,Guatemala,2021,0.555,North America
+GTM,Guatemala,2022,0.509,North America
+GTM,Guatemala,2023,0.506,North America
+GTM,Guatemala,2024,0.609,North America
+GTM,Guatemala,2025,0.637,North America
+GIN,Guinea,2015,0.375,Africa
+GIN,Guinea,2016,0.377,Africa
+GIN,Guinea,2017,0.369,Africa
+GIN,Guinea,2018,0.373,Africa
+GIN,Guinea,2019,0.36,Africa
+GIN,Guinea,2020,0.295,Africa
+GIN,Guinea,2021,0.258,Africa
+GIN,Guinea,2022,0.172,Africa
+GIN,Guinea,2023,0.169,Africa
+GIN,Guinea,2024,0.159,Africa
+GIN,Guinea,2025,0.187,Africa
+GNB,Guinea-Bissau,2015,0.501,Africa
+GNB,Guinea-Bissau,2016,0.5,Africa
+GNB,Guinea-Bissau,2017,0.49,Africa
+GNB,Guinea-Bissau,2018,0.51,Africa
+GNB,Guinea-Bissau,2019,0.529,Africa
+GNB,Guinea-Bissau,2020,0.533,Africa
+GNB,Guinea-Bissau,2021,0.535,Africa
+GNB,Guinea-Bissau,2022,0.377,Africa
+GNB,Guinea-Bissau,2023,0.428,Africa
+GNB,Guinea-Bissau,2024,0.279,Africa
+GNB,Guinea-Bissau,2025,0.252,Africa
+GUY,Guyana,2015,0.65,South America
+GUY,Guyana,2016,0.657,South America
+GUY,Guyana,2017,0.66,South America
+GUY,Guyana,2018,0.664,South America
+GUY,Guyana,2019,0.64,South America
+GUY,Guyana,2020,0.555,South America
+GUY,Guyana,2021,0.498,South America
+GUY,Guyana,2022,0.491,South America
+GUY,Guyana,2023,0.484,South America
+GUY,Guyana,2024,0.491,South America
+GUY,Guyana,2025,0.515,South America
+HTI,Haiti,2015,0.425,North America
+HTI,Haiti,2016,0.42,North America
+HTI,Haiti,2017,0.418,North America
+HTI,Haiti,2018,0.429,North America
+HTI,Haiti,2019,0.421,North America
+HTI,Haiti,2020,0.4,North America
+HTI,Haiti,2021,0.33,North America
+HTI,Haiti,2022,0.233,North America
+HTI,Haiti,2023,0.231,North America
+HTI,Haiti,2024,0.237,North America
+HTI,Haiti,2025,0.238,North America
+HND,Honduras,2015,0.426,North America
+HND,Honduras,2016,0.425,North America
+HND,Honduras,2017,0.414,North America
+HND,Honduras,2018,0.361,North America
+HND,Honduras,2019,0.368,North America
+HND,Honduras,2020,0.372,North America
+HND,Honduras,2021,0.394,North America
+HND,Honduras,2022,0.544,North America
+HND,Honduras,2023,0.539,North America
+HND,Honduras,2024,0.538,North America
+HND,Honduras,2025,0.511,North America
+HKG,Hong Kong,2015,0.345,Asia
+HKG,Hong Kong,2016,0.333,Asia
+HKG,Hong Kong,2017,0.325,Asia
+HKG,Hong Kong,2018,0.318,Asia
+HKG,Hong Kong,2019,0.3,Asia
+HKG,Hong Kong,2020,0.255,Asia
+HKG,Hong Kong,2021,0.205,Asia
+HKG,Hong Kong,2022,0.16,Asia
+HKG,Hong Kong,2023,0.149,Asia
+HKG,Hong Kong,2024,0.158,Asia
+HKG,Hong Kong,2025,0.151,Asia
+HUN,Hungary,2015,0.617,Europe
+HUN,Hungary,2016,0.613,Europe
+HUN,Hungary,2017,0.555,Europe
+HUN,Hungary,2018,0.481,Europe
+HUN,Hungary,2019,0.466,Europe
+HUN,Hungary,2020,0.46,Europe
+HUN,Hungary,2021,0.45,Europe
+HUN,Hungary,2022,0.447,Europe
+HUN,Hungary,2023,0.434,Europe
+HUN,Hungary,2024,0.444,Europe
+HUN,Hungary,2025,0.421,Europe
+ISL,Iceland,2015,0.861,Europe
+ISL,Iceland,2016,0.86,Europe
+ISL,Iceland,2017,0.861,Europe
+ISL,Iceland,2018,0.875,Europe
+ISL,Iceland,2019,0.859,Europe
+ISL,Iceland,2020,0.859,Europe
+ISL,Iceland,2021,0.836,Europe
+ISL,Iceland,2022,0.832,Europe
+ISL,Iceland,2023,0.841,Europe
+ISL,Iceland,2024,0.842,Europe
+ISL,Iceland,2025,0.807,Europe
+IND,India,2015,0.543,Asia
+IND,India,2016,0.524,Asia
+IND,India,2017,0.488,Asia
+IND,India,2018,0.482,Asia
+IND,India,2019,0.43,Asia
+IND,India,2020,0.39,Asia
+IND,India,2021,0.398,Asia
+IND,India,2022,0.384,Asia
+IND,India,2023,0.374,Asia
+IND,India,2024,0.381,Asia
+IND,India,2025,0.377,Asia
+IDN,Indonesia,2015,0.654,Asia
+IDN,Indonesia,2016,0.639,Asia
+IDN,Indonesia,2017,0.627,Asia
+IDN,Indonesia,2018,0.599,Asia
+IDN,Indonesia,2019,0.596,Asia
+IDN,Indonesia,2020,0.566,Asia
+IDN,Indonesia,2021,0.545,Asia
+IDN,Indonesia,2022,0.561,Asia
+IDN,Indonesia,2023,0.538,Asia
+IDN,Indonesia,2024,0.496,Asia
+IDN,Indonesia,2025,0.462,Asia
+IRN,Iran,2015,0.186,Asia
+IRN,Iran,2016,0.186,Asia
+IRN,Iran,2017,0.185,Asia
+IRN,Iran,2018,0.182,Asia
+IRN,Iran,2019,0.181,Asia
+IRN,Iran,2020,0.165,Asia
+IRN,Iran,2021,0.158,Asia
+IRN,Iran,2022,0.148,Asia
+IRN,Iran,2023,0.153,Asia
+IRN,Iran,2024,0.166,Asia
+IRN,Iran,2025,0.159,Asia
+IRQ,Iraq,2015,0.396,Asia
+IRQ,Iraq,2016,0.39,Asia
+IRQ,Iraq,2017,0.375,Asia
+IRQ,Iraq,2018,0.398,Asia
+IRQ,Iraq,2019,0.393,Asia
+IRQ,Iraq,2020,0.376,Asia
+IRQ,Iraq,2021,0.374,Asia
+IRQ,Iraq,2022,0.385,Asia
+IRQ,Iraq,2023,0.371,Asia
+IRQ,Iraq,2024,0.361,Asia
+IRQ,Iraq,2025,0.369,Asia
+IRL,Ireland,2015,0.895,Europe
+IRL,Ireland,2016,0.886,Europe
+IRL,Ireland,2017,0.887,Europe
+IRL,Ireland,2018,0.89,Europe
+IRL,Ireland,2019,0.887,Europe
+IRL,Ireland,2020,0.891,Europe
+IRL,Ireland,2021,0.898,Europe
+IRL,Ireland,2022,0.892,Europe
+IRL,Ireland,2023,0.894,Europe
+IRL,Ireland,2024,0.895,Europe
+IRL,Ireland,2025,0.887,Europe
+ISR,Israel,2015,0.733,Asia
+ISR,Israel,2016,0.729,Asia
+ISR,Israel,2017,0.714,Asia
+ISR,Israel,2018,0.705,Asia
+ISR,Israel,2019,0.708,Asia
+ISR,Israel,2020,0.723,Asia
+ISR,Israel,2021,0.722,Asia
+ISR,Israel,2022,0.714,Asia
+ISR,Israel,2023,0.704,Asia
+ISR,Israel,2024,0.702,Asia
+ISR,Israel,2025,0.694,Asia
+ITA,Italy,2015,0.865,Europe
+ITA,Italy,2016,0.869,Europe
+ITA,Italy,2017,0.87,Europe
+ITA,Italy,2018,0.864,Europe
+ITA,Italy,2019,0.854,Europe
+ITA,Italy,2020,0.857,Europe
+ITA,Italy,2021,0.857,Europe
+ITA,Italy,2022,0.842,Europe
+ITA,Italy,2023,0.806,Europe
+ITA,Italy,2024,0.784,Europe
+ITA,Italy,2025,0.745,Europe
+JAM,Jamaica,2015,0.798,North America
+JAM,Jamaica,2016,0.804,North America
+JAM,Jamaica,2017,0.811,North America
+JAM,Jamaica,2018,0.807,North America
+JAM,Jamaica,2019,0.81,North America
+JAM,Jamaica,2020,0.808,North America
+JAM,Jamaica,2021,0.801,North America
+JAM,Jamaica,2022,0.798,North America
+JAM,Jamaica,2023,0.798,North America
+JAM,Jamaica,2024,0.798,North America
+JAM,Jamaica,2025,0.805,North America
+JPN,Japan,2015,0.817,Asia
+JPN,Japan,2016,0.817,Asia
+JPN,Japan,2017,0.821,Asia
+JPN,Japan,2018,0.832,Asia
+JPN,Japan,2019,0.83,Asia
+JPN,Japan,2020,0.831,Asia
+JPN,Japan,2021,0.824,Asia
+JPN,Japan,2022,0.823,Asia
+JPN,Japan,2023,0.826,Asia
+JPN,Japan,2024,0.822,Asia
+JPN,Japan,2025,0.819,Asia
+JOR,Jordan,2015,0.255,Asia
+JOR,Jordan,2016,0.239,Asia
+JOR,Jordan,2017,0.263,Asia
+JOR,Jordan,2018,0.261,Asia
+JOR,Jordan,2019,0.26,Asia
+JOR,Jordan,2020,0.258,Asia
+JOR,Jordan,2021,0.257,Asia
+JOR,Jordan,2022,0.256,Asia
+JOR,Jordan,2023,0.252,Asia
+JOR,Jordan,2024,0.274,Asia
+JOR,Jordan,2025,0.282,Asia
+KAZ,Kazakhstan,2015,0.234,Asia
+KAZ,Kazakhstan,2016,0.242,Asia
+KAZ,Kazakhstan,2017,0.235,Asia
+KAZ,Kazakhstan,2018,0.232,Asia
+KAZ,Kazakhstan,2019,0.236,Asia
+KAZ,Kazakhstan,2020,0.241,Asia
+KAZ,Kazakhstan,2021,0.253,Asia
+KAZ,Kazakhstan,2022,0.265,Asia
+KAZ,Kazakhstan,2023,0.269,Asia
+KAZ,Kazakhstan,2024,0.267,Asia
+KAZ,Kazakhstan,2025,0.259,Asia
+KEN,Kenya,2015,0.539,Africa
+KEN,Kenya,2016,0.534,Africa
+KEN,Kenya,2017,0.512,Africa
+KEN,Kenya,2018,0.496,Africa
+KEN,Kenya,2019,0.501,Africa
+KEN,Kenya,2020,0.503,Africa
+KEN,Kenya,2021,0.507,Africa
+KEN,Kenya,2022,0.55,Africa
+KEN,Kenya,2023,0.57,Africa
+KEN,Kenya,2024,0.557,Africa
+KEN,Kenya,2025,0.563,Africa
+KWT,Kuwait,2015,0.311,Asia
+KWT,Kuwait,2016,0.311,Asia
+KWT,Kuwait,2017,0.326,Asia
+KWT,Kuwait,2018,0.32,Asia
+KWT,Kuwait,2019,0.323,Asia
+KWT,Kuwait,2020,0.317,Asia
+KWT,Kuwait,2021,0.301,Asia
+KWT,Kuwait,2022,0.298,Asia
+KWT,Kuwait,2023,0.314,Asia
+KWT,Kuwait,2024,0.198,Asia
+KWT,Kuwait,2025,0.138,Asia
+KGZ,Kyrgyzstan,2015,0.455,Asia
+KGZ,Kyrgyzstan,2016,0.447,Asia
+KGZ,Kyrgyzstan,2017,0.449,Asia
+KGZ,Kyrgyzstan,2018,0.467,Asia
+KGZ,Kyrgyzstan,2019,0.441,Asia
+KGZ,Kyrgyzstan,2020,0.385,Asia
+KGZ,Kyrgyzstan,2021,0.41,Asia
+KGZ,Kyrgyzstan,2022,0.38,Asia
+KGZ,Kyrgyzstan,2023,0.348,Asia
+KGZ,Kyrgyzstan,2024,0.321,Asia
+KGZ,Kyrgyzstan,2025,0.313,Asia
+LAO,Laos,2015,0.09,Asia
+LAO,Laos,2016,0.093,Asia
+LAO,Laos,2017,0.124,Asia
+LAO,Laos,2018,0.125,Asia
+LAO,Laos,2019,0.127,Asia
+LAO,Laos,2020,0.126,Asia
+LAO,Laos,2021,0.135,Asia
+LAO,Laos,2022,0.134,Asia
+LAO,Laos,2023,0.132,Asia
+LAO,Laos,2024,0.135,Asia
+LAO,Laos,2025,0.135,Asia
+LVA,Latvia,2015,0.838,Europe
+LVA,Latvia,2016,0.84,Europe
+LVA,Latvia,2017,0.833,Europe
+LVA,Latvia,2018,0.832,Europe
+LVA,Latvia,2019,0.826,Europe
+LVA,Latvia,2020,0.822,Europe
+LVA,Latvia,2021,0.831,Europe
+LVA,Latvia,2022,0.829,Europe
+LVA,Latvia,2023,0.846,Europe
+LVA,Latvia,2024,0.834,Europe
+LVA,Latvia,2025,0.834,Europe
+LBN,Lebanon,2015,0.48,Asia
+LBN,Lebanon,2016,0.479,Asia
+LBN,Lebanon,2017,0.47,Asia
+LBN,Lebanon,2018,0.44,Asia
+LBN,Lebanon,2019,0.429,Asia
+LBN,Lebanon,2020,0.436,Asia
+LBN,Lebanon,2021,0.433,Asia
+LBN,Lebanon,2022,0.405,Asia
+LBN,Lebanon,2023,0.361,Asia
+LBN,Lebanon,2024,0.347,Asia
+LBN,Lebanon,2025,0.419,Asia
+LSO,Lesotho,2015,0.597,Africa
+LSO,Lesotho,2016,0.576,Africa
+LSO,Lesotho,2017,0.501,Africa
+LSO,Lesotho,2018,0.601,Africa
+LSO,Lesotho,2019,0.621,Africa
+LSO,Lesotho,2020,0.627,Africa
+LSO,Lesotho,2021,0.616,Africa
+LSO,Lesotho,2022,0.648,Africa
+LSO,Lesotho,2023,0.667,Africa
+LSO,Lesotho,2024,0.652,Africa
+LSO,Lesotho,2025,0.661,Africa
+LBR,Liberia,2015,0.611,Africa
+LBR,Liberia,2016,0.615,Africa
+LBR,Liberia,2017,0.62,Africa
+LBR,Liberia,2018,0.621,Africa
+LBR,Liberia,2019,0.623,Africa
+LBR,Liberia,2020,0.633,Africa
+LBR,Liberia,2021,0.616,Africa
+LBR,Liberia,2022,0.618,Africa
+LBR,Liberia,2023,0.624,Africa
+LBR,Liberia,2024,0.61,Africa
+LBR,Liberia,2025,0.597,Africa
+LBY,Libya,2015,0.285,Africa
+LBY,Libya,2016,0.285,Africa
+LBY,Libya,2017,0.273,Africa
+LBY,Libya,2018,0.268,Africa
+LBY,Libya,2019,0.263,Africa
+LBY,Libya,2020,0.266,Africa
+LBY,Libya,2021,0.216,Africa
+LBY,Libya,2022,0.206,Africa
+LBY,Libya,2023,0.196,Africa
+LBY,Libya,2024,0.195,Africa
+LBY,Libya,2025,0.193,Africa
+LTU,Lithuania,2015,0.836,Europe
+LTU,Lithuania,2016,0.825,Europe
+LTU,Lithuania,2017,0.808,Europe
+LTU,Lithuania,2018,0.818,Europe
+LTU,Lithuania,2019,0.817,Europe
+LTU,Lithuania,2020,0.802,Europe
+LTU,Lithuania,2021,0.793,Europe
+LTU,Lithuania,2022,0.793,Europe
+LTU,Lithuania,2023,0.785,Europe
+LTU,Lithuania,2024,0.798,Europe
+LTU,Lithuania,2025,0.786,Europe
+LUX,Luxembourg,2015,0.874,Europe
+LUX,Luxembourg,2016,0.874,Europe
+LUX,Luxembourg,2017,0.874,Europe
+LUX,Luxembourg,2018,0.874,Europe
+LUX,Luxembourg,2019,0.872,Europe
+LUX,Luxembourg,2020,0.872,Europe
+LUX,Luxembourg,2021,0.872,Europe
+LUX,Luxembourg,2022,0.872,Europe
+LUX,Luxembourg,2023,0.871,Europe
+LUX,Luxembourg,2024,0.869,Europe
+LUX,Luxembourg,2025,0.869,Europe
+MDG,Madagascar,2015,0.476,Africa
+MDG,Madagascar,2016,0.48,Africa
+MDG,Madagascar,2017,0.478,Africa
+MDG,Madagascar,2018,0.481,Africa
+MDG,Madagascar,2019,0.478,Africa
+MDG,Madagascar,2020,0.486,Africa
+MDG,Madagascar,2021,0.479,Africa
+MDG,Madagascar,2022,0.477,Africa
+MDG,Madagascar,2023,0.461,Africa
+MDG,Madagascar,2024,0.403,Africa
+MDG,Madagascar,2025,0.361,Africa
+MWI,Malawi,2015,0.54,Africa
+MWI,Malawi,2016,0.538,Africa
+MWI,Malawi,2017,0.546,Africa
+MWI,Malawi,2018,0.528,Africa
+MWI,Malawi,2019,0.48,Africa
+MWI,Malawi,2020,0.534,Africa
+MWI,Malawi,2021,0.603,Africa
+MWI,Malawi,2022,0.611,Africa
+MWI,Malawi,2023,0.571,Africa
+MWI,Malawi,2024,0.563,Africa
+MWI,Malawi,2025,0.557,Africa
+MYS,Malaysia,2015,0.325,Asia
+MYS,Malaysia,2016,0.328,Asia
+MYS,Malaysia,2017,0.333,Asia
+MYS,Malaysia,2018,0.444,Asia
+MYS,Malaysia,2019,0.47,Asia
+MYS,Malaysia,2020,0.425,Asia
+MYS,Malaysia,2021,0.432,Asia
+MYS,Malaysia,2022,0.459,Asia
+MYS,Malaysia,2023,0.508,Asia
+MYS,Malaysia,2024,0.513,Asia
+MYS,Malaysia,2025,0.504,Asia
+MDV,Maldives,2015,0.38,Asia
+MDV,Maldives,2016,0.365,Asia
+MDV,Maldives,2017,0.353,Asia
+MDV,Maldives,2018,0.391,Asia
+MDV,Maldives,2019,0.57,Asia
+MDV,Maldives,2020,0.581,Asia
+MDV,Maldives,2021,0.582,Asia
+MDV,Maldives,2022,0.586,Asia
+MDV,Maldives,2023,0.596,Asia
+MDV,Maldives,2024,0.577,Asia
+MDV,Maldives,2025,0.556,Asia
+MLI,Mali,2015,0.543,Africa
+MLI,Mali,2016,0.543,Africa
+MLI,Mali,2017,0.54,Africa
+MLI,Mali,2018,0.518,Africa
+MLI,Mali,2019,0.516,Africa
+MLI,Mali,2020,0.421,Africa
+MLI,Mali,2021,0.243,Africa
+MLI,Mali,2022,0.231,Africa
+MLI,Mali,2023,0.229,Africa
+MLI,Mali,2024,0.192,Africa
+MLI,Mali,2025,0.164,Africa
+MLT,Malta,2015,0.778,Europe
+MLT,Malta,2016,0.777,Europe
+MLT,Malta,2017,0.761,Europe
+MLT,Malta,2018,0.754,Europe
+MLT,Malta,2019,0.767,Europe
+MLT,Malta,2020,0.767,Europe
+MLT,Malta,2021,0.77,Europe
+MLT,Malta,2022,0.78,Europe
+MLT,Malta,2023,0.783,Europe
+MLT,Malta,2024,0.783,Europe
+MLT,Malta,2025,0.783,Europe
+MRT,Mauritania,2015,0.431,Africa
+MRT,Mauritania,2016,0.431,Africa
+MRT,Mauritania,2017,0.389,Africa
+MRT,Mauritania,2018,0.391,Africa
+MRT,Mauritania,2019,0.407,Africa
+MRT,Mauritania,2020,0.389,Africa
+MRT,Mauritania,2021,0.391,Africa
+MRT,Mauritania,2022,0.396,Africa
+MRT,Mauritania,2023,0.368,Africa
+MRT,Mauritania,2024,0.337,Africa
+MRT,Mauritania,2025,0.328,Africa
+MUS,Mauritius,2015,0.737,Africa
+MUS,Mauritius,2016,0.731,Africa
+MUS,Mauritius,2017,0.732,Africa
+MUS,Mauritius,2018,0.739,Africa
+MUS,Mauritius,2019,0.694,Africa
+MUS,Mauritius,2020,0.549,Africa
+MUS,Mauritius,2021,0.532,Africa
+MUS,Mauritius,2022,0.501,Africa
+MUS,Mauritius,2023,0.47,Africa
+MUS,Mauritius,2024,0.495,Africa
+MUS,Mauritius,2025,0.738,Africa
+MEX,Mexico,2015,0.643,North America
+MEX,Mexico,2016,0.643,North America
+MEX,Mexico,2017,0.638,North America
+MEX,Mexico,2018,0.675,North America
+MEX,Mexico,2019,0.684,North America
+MEX,Mexico,2020,0.664,North America
+MEX,Mexico,2021,0.624,North America
+MEX,Mexico,2022,0.584,North America
+MEX,Mexico,2023,0.548,North America
+MEX,Mexico,2024,0.496,North America
+MEX,Mexico,2025,0.469,North America
+MDA,Moldova,2015,0.57,Europe
+MDA,Moldova,2016,0.529,Europe
+MDA,Moldova,2017,0.503,Europe
+MDA,Moldova,2018,0.506,Europe
+MDA,Moldova,2019,0.588,Europe
+MDA,Moldova,2020,0.651,Europe
+MDA,Moldova,2021,0.752,Europe
+MDA,Moldova,2022,0.76,Europe
+MDA,Moldova,2023,0.712,Europe
+MDA,Moldova,2024,0.622,Europe
+MDA,Moldova,2025,0.553,Europe
+MNG,Mongolia,2015,0.681,Asia
+MNG,Mongolia,2016,0.671,Asia
+MNG,Mongolia,2017,0.661,Asia
+MNG,Mongolia,2018,0.653,Asia
+MNG,Mongolia,2019,0.653,Asia
+MNG,Mongolia,2020,0.629,Asia
+MNG,Mongolia,2021,0.609,Asia
+MNG,Mongolia,2022,0.573,Asia
+MNG,Mongolia,2023,0.534,Asia
+MNG,Mongolia,2024,0.498,Asia
+MNG,Mongolia,2025,0.535,Asia
+MNE,Montenegro,2015,0.484,Europe
+MNE,Montenegro,2016,0.484,Europe
+MNE,Montenegro,2017,0.474,Europe
+MNE,Montenegro,2018,0.482,Europe
+MNE,Montenegro,2019,0.483,Europe
+MNE,Montenegro,2020,0.5,Europe
+MNE,Montenegro,2021,0.534,Europe
+MNE,Montenegro,2022,0.532,Europe
+MNE,Montenegro,2023,0.61,Europe
+MNE,Montenegro,2024,0.64,Europe
+MNE,Montenegro,2025,0.636,Europe
+MAR,Morocco,2015,0.264,Africa
+MAR,Morocco,2016,0.266,Africa
+MAR,Morocco,2017,0.259,Africa
+MAR,Morocco,2018,0.262,Africa
+MAR,Morocco,2019,0.257,Africa
+MAR,Morocco,2020,0.257,Africa
+MAR,Morocco,2021,0.261,Africa
+MAR,Morocco,2022,0.262,Africa
+MAR,Morocco,2023,0.262,Africa
+MAR,Morocco,2024,0.261,Africa
+MAR,Morocco,2025,0.259,Africa
+MOZ,Mozambique,2015,0.437,Africa
+MOZ,Mozambique,2016,0.433,Africa
+MOZ,Mozambique,2017,0.408,Africa
+MOZ,Mozambique,2018,0.4,Africa
+MOZ,Mozambique,2019,0.397,Africa
+MOZ,Mozambique,2020,0.364,Africa
+MOZ,Mozambique,2021,0.367,Africa
+MOZ,Mozambique,2022,0.366,Africa
+MOZ,Mozambique,2023,0.351,Africa
+MOZ,Mozambique,2024,0.31,Africa
+MOZ,Mozambique,2025,0.279,Africa
+MMR,Myanmar,2015,0.37,Asia
+MMR,Myanmar,2016,0.402,Asia
+MMR,Myanmar,2017,0.402,Asia
+MMR,Myanmar,2018,0.397,Asia
+MMR,Myanmar,2019,0.421,Asia
+MMR,Myanmar,2020,0.426,Asia
+MMR,Myanmar,2021,0.102,Asia
+MMR,Myanmar,2022,0.087,Asia
+MMR,Myanmar,2023,0.077,Asia
+MMR,Myanmar,2024,0.08,Asia
+MMR,Myanmar,2025,0.08,Asia
+NAM,Namibia,2015,0.707,Africa
+NAM,Namibia,2016,0.711,Africa
+NAM,Namibia,2017,0.709,Africa
+NAM,Namibia,2018,0.682,Africa
+NAM,Namibia,2019,0.647,Africa
+NAM,Namibia,2020,0.632,Africa
+NAM,Namibia,2021,0.622,Africa
+NAM,Namibia,2022,0.626,Africa
+NAM,Namibia,2023,0.622,Africa
+NAM,Namibia,2024,0.624,Africa
+NAM,Namibia,2025,0.633,Africa
+NPL,Nepal,2015,0.643,Asia
+NPL,Nepal,2016,0.665,Asia
+NPL,Nepal,2017,0.66,Asia
+NPL,Nepal,2018,0.633,Asia
+NPL,Nepal,2019,0.606,Asia
+NPL,Nepal,2020,0.598,Asia
+NPL,Nepal,2021,0.609,Asia
+NPL,Nepal,2022,0.631,Asia
+NPL,Nepal,2023,0.685,Asia
+NPL,Nepal,2024,0.669,Asia
+NPL,Nepal,2025,0.656,Asia
+NLD,Netherlands,2015,0.879,Europe
+NLD,Netherlands,2016,0.879,Europe
+NLD,Netherlands,2017,0.878,Europe
+NLD,Netherlands,2018,0.876,Europe
+NLD,Netherlands,2019,0.866,Europe
+NLD,Netherlands,2020,0.864,Europe
+NLD,Netherlands,2021,0.864,Europe
+NLD,Netherlands,2022,0.852,Europe
+NLD,Netherlands,2023,0.847,Europe
+NLD,Netherlands,2024,0.823,Europe
+NLD,Netherlands,2025,0.832,Europe
+NZL,New Zealand,2015,0.883,Oceania
+NZL,New Zealand,2016,0.883,Oceania
+NZL,New Zealand,2017,0.879,Oceania
+NZL,New Zealand,2018,0.888,Oceania
+NZL,New Zealand,2019,0.885,Oceania
+NZL,New Zealand,2020,0.882,Oceania
+NZL,New Zealand,2021,0.874,Oceania
+NZL,New Zealand,2022,0.878,Oceania
+NZL,New Zealand,2023,0.88,Oceania
+NZL,New Zealand,2024,0.868,Oceania
+NZL,New Zealand,2025,0.849,Oceania
+NIC,Nicaragua,2015,0.318,North America
+NIC,Nicaragua,2016,0.305,North America
+NIC,Nicaragua,2017,0.281,North America
+NIC,Nicaragua,2018,0.221,North America
+NIC,Nicaragua,2019,0.215,North America
+NIC,Nicaragua,2020,0.215,North America
+NIC,Nicaragua,2021,0.195,North America
+NIC,Nicaragua,2022,0.158,North America
+NIC,Nicaragua,2023,0.158,North America
+NIC,Nicaragua,2024,0.151,North America
+NIC,Nicaragua,2025,0.151,North America
+NER,Niger,2015,0.622,Africa
+NER,Niger,2016,0.573,Africa
+NER,Niger,2017,0.542,Africa
+NER,Niger,2018,0.53,Africa
+NER,Niger,2019,0.528,Africa
+NER,Niger,2020,0.544,Africa
+NER,Niger,2021,0.523,Africa
+NER,Niger,2022,0.504,Africa
+NER,Niger,2023,0.388,Africa
+NER,Niger,2024,0.237,Africa
+NER,Niger,2025,0.227,Africa
+NGA,Nigeria,2015,0.554,Africa
+NGA,Nigeria,2016,0.555,Africa
+NGA,Nigeria,2017,0.556,Africa
+NGA,Nigeria,2018,0.555,Africa
+NGA,Nigeria,2019,0.52,Africa
+NGA,Nigeria,2020,0.512,Africa
+NGA,Nigeria,2021,0.488,Africa
+NGA,Nigeria,2022,0.49,Africa
+NGA,Nigeria,2023,0.484,Africa
+NGA,Nigeria,2024,0.499,Africa
+NGA,Nigeria,2025,0.505,Africa
+PRK,North Korea,2015,0.085,Asia
+PRK,North Korea,2016,0.085,Asia
+PRK,North Korea,2017,0.085,Asia
+PRK,North Korea,2018,0.085,Asia
+PRK,North Korea,2019,0.083,Asia
+PRK,North Korea,2020,0.083,Asia
+PRK,North Korea,2021,0.083,Asia
+PRK,North Korea,2022,0.083,Asia
+PRK,North Korea,2023,0.083,Asia
+PRK,North Korea,2024,0.084,Asia
+PRK,North Korea,2025,0.083,Asia
+MKD,North Macedonia,2015,0.44,Europe
+MKD,North Macedonia,2016,0.449,Europe
+MKD,North Macedonia,2017,0.548,Europe
+MKD,North Macedonia,2018,0.575,Europe
+MKD,North Macedonia,2019,0.602,Europe
+MKD,North Macedonia,2020,0.598,Europe
+MKD,North Macedonia,2021,0.592,Europe
+MKD,North Macedonia,2022,0.56,Europe
+MKD,North Macedonia,2023,0.562,Europe
+MKD,North Macedonia,2024,0.557,Europe
+MKD,North Macedonia,2025,0.562,Europe
+NOR,Norway,2015,0.904,Europe
+NOR,Norway,2016,0.891,Europe
+NOR,Norway,2017,0.888,Europe
+NOR,Norway,2018,0.883,Europe
+NOR,Norway,2019,0.889,Europe
+NOR,Norway,2020,0.888,Europe
+NOR,Norway,2021,0.892,Europe
+NOR,Norway,2022,0.892,Europe
+NOR,Norway,2023,0.89,Europe
+NOR,Norway,2024,0.889,Europe
+NOR,Norway,2025,0.89,Europe
+OMN,Oman,2015,0.172,Asia
+OMN,Oman,2016,0.175,Asia
+OMN,Oman,2017,0.176,Asia
+OMN,Oman,2018,0.176,Asia
+OMN,Oman,2019,0.176,Asia
+OMN,Oman,2020,0.174,Asia
+OMN,Oman,2021,0.174,Asia
+OMN,Oman,2022,0.172,Asia
+OMN,Oman,2023,0.172,Asia
+OMN,Oman,2024,0.175,Asia
+OMN,Oman,2025,0.175,Asia
+PAK,Pakistan,2015,0.441,Asia
+PAK,Pakistan,2016,0.429,Asia
+PAK,Pakistan,2017,0.419,Asia
+PAK,Pakistan,2018,0.395,Asia
+PAK,Pakistan,2019,0.368,Asia
+PAK,Pakistan,2020,0.377,Asia
+PAK,Pakistan,2021,0.394,Asia
+PAK,Pakistan,2022,0.379,Asia
+PAK,Pakistan,2023,0.334,Asia
+PAK,Pakistan,2024,0.313,Asia
+PAK,Pakistan,2025,0.302,Asia
+PAN,Panama,2015,0.755,North America
+PAN,Panama,2016,0.753,North America
+PAN,Panama,2017,0.736,North America
+PAN,Panama,2018,0.732,North America
+PAN,Panama,2019,0.731,North America
+PAN,Panama,2020,0.721,North America
+PAN,Panama,2021,0.735,North America
+PAN,Panama,2022,0.725,North America
+PAN,Panama,2023,0.722,North America
+PAN,Panama,2024,0.728,North America
+PAN,Panama,2025,0.728,North America
+PNG,Papua New Guinea,2015,0.444,Oceania
+PNG,Papua New Guinea,2016,0.445,Oceania
+PNG,Papua New Guinea,2017,0.447,Oceania
+PNG,Papua New Guinea,2018,0.457,Oceania
+PNG,Papua New Guinea,2019,0.462,Oceania
+PNG,Papua New Guinea,2020,0.455,Oceania
+PNG,Papua New Guinea,2021,0.455,Oceania
+PNG,Papua New Guinea,2022,0.467,Oceania
+PNG,Papua New Guinea,2023,0.466,Oceania
+PNG,Papua New Guinea,2024,0.462,Oceania
+PNG,Papua New Guinea,2025,0.467,Oceania
+PRY,Paraguay,2015,0.593,South America
+PRY,Paraguay,2016,0.589,South America
+PRY,Paraguay,2017,0.596,South America
+PRY,Paraguay,2018,0.583,South America
+PRY,Paraguay,2019,0.585,South America
+PRY,Paraguay,2020,0.578,South America
+PRY,Paraguay,2021,0.578,South America
+PRY,Paraguay,2022,0.578,South America
+PRY,Paraguay,2023,0.576,South America
+PRY,Paraguay,2024,0.581,South America
+PRY,Paraguay,2025,0.581,South America
+PER,Peru,2015,0.817,South America
+PER,Peru,2016,0.788,South America
+PER,Peru,2017,0.789,South America
+PER,Peru,2018,0.81,South America
+PER,Peru,2019,0.801,South America
+PER,Peru,2020,0.818,South America
+PER,Peru,2021,0.771,South America
+PER,Peru,2022,0.733,South America
+PER,Peru,2023,0.7,South America
+PER,Peru,2024,0.642,South America
+PER,Peru,2025,0.667,South America
+PHL,Philippines,2015,0.522,Asia
+PHL,Philippines,2016,0.485,Asia
+PHL,Philippines,2017,0.469,Asia
+PHL,Philippines,2018,0.45,Asia
+PHL,Philippines,2019,0.428,Asia
+PHL,Philippines,2020,0.405,Asia
+PHL,Philippines,2021,0.411,Asia
+PHL,Philippines,2022,0.411,Asia
+PHL,Philippines,2023,0.416,Asia
+PHL,Philippines,2024,0.411,Asia
+PHL,Philippines,2025,0.392,Asia
+POL,Poland,2015,0.876,Europe
+POL,Poland,2016,0.731,Europe
+POL,Poland,2017,0.698,Europe
+POL,Poland,2018,0.694,Europe
+POL,Poland,2019,0.682,Europe
+POL,Poland,2020,0.616,Europe
+POL,Poland,2021,0.587,Europe
+POL,Poland,2022,0.578,Europe
+POL,Poland,2023,0.598,Europe
+POL,Poland,2024,0.73,Europe
+POL,Poland,2025,0.768,Europe
+PRT,Portugal,2015,0.887,Europe
+PRT,Portugal,2016,0.888,Europe
+PRT,Portugal,2017,0.898,Europe
+PRT,Portugal,2018,0.899,Europe
+PRT,Portugal,2019,0.886,Europe
+PRT,Portugal,2020,0.886,Europe
+PRT,Portugal,2021,0.884,Europe
+PRT,Portugal,2022,0.847,Europe
+PRT,Portugal,2023,0.854,Europe
+PRT,Portugal,2024,0.836,Europe
+PRT,Portugal,2025,0.822,Europe
+QAT,Qatar,2015,0.041,Asia
+QAT,Qatar,2016,0.04,Asia
+QAT,Qatar,2017,0.041,Asia
+QAT,Qatar,2018,0.042,Asia
+QAT,Qatar,2019,0.04,Asia
+QAT,Qatar,2020,0.038,Asia
+QAT,Qatar,2021,0.089,Asia
+QAT,Qatar,2022,0.086,Asia
+QAT,Qatar,2023,0.087,Asia
+QAT,Qatar,2024,0.087,Asia
+QAT,Qatar,2025,0.034,Asia
+ROU,Romania,2015,0.716,Europe
+ROU,Romania,2016,0.733,Europe
+ROU,Romania,2017,0.695,Europe
+ROU,Romania,2018,0.692,Europe
+ROU,Romania,2019,0.75,Europe
+ROU,Romania,2020,0.805,Europe
+ROU,Romania,2021,0.766,Europe
+ROU,Romania,2022,0.691,Europe
+ROU,Romania,2023,0.677,Europe
+ROU,Romania,2024,0.628,Europe
+ROU,Romania,2025,0.605,Europe
+RUS,Russia,2015,0.265,Europe
+RUS,Russia,2016,0.263,Europe
+RUS,Russia,2017,0.261,Europe
+RUS,Russia,2018,0.264,Europe
+RUS,Russia,2019,0.259,Europe
+RUS,Russia,2020,0.255,Europe
+RUS,Russia,2021,0.245,Europe
+RUS,Russia,2022,0.206,Europe
+RUS,Russia,2023,0.19,Europe
+RUS,Russia,2024,0.171,Europe
+RUS,Russia,2025,0.17,Europe
+RWA,Rwanda,2015,0.226,Africa
+RWA,Rwanda,2016,0.226,Africa
+RWA,Rwanda,2017,0.222,Africa
+RWA,Rwanda,2018,0.226,Africa
+RWA,Rwanda,2019,0.227,Africa
+RWA,Rwanda,2020,0.227,Africa
+RWA,Rwanda,2021,0.226,Africa
+RWA,Rwanda,2022,0.219,Africa
+RWA,Rwanda,2023,0.212,Africa
+RWA,Rwanda,2024,0.201,Africa
+RWA,Rwanda,2025,0.193,Africa
+STP,Sao Tome and Principe,2015,0.664,Africa
+STP,Sao Tome and Principe,2016,0.658,Africa
+STP,Sao Tome and Principe,2017,0.647,Africa
+STP,Sao Tome and Principe,2018,0.65,Africa
+STP,Sao Tome and Principe,2019,0.67,Africa
+STP,Sao Tome and Principe,2020,0.66,Africa
+STP,Sao Tome and Principe,2021,0.657,Africa
+STP,Sao Tome and Principe,2022,0.65,Africa
+STP,Sao Tome and Principe,2023,0.644,Africa
+STP,Sao Tome and Principe,2024,0.632,Africa
+STP,Sao Tome and Principe,2025,0.632,Africa
+SAU,Saudi Arabia,2015,0.016,Asia
+SAU,Saudi Arabia,2016,0.016,Asia
+SAU,Saudi Arabia,2017,0.014,Asia
+SAU,Saudi Arabia,2018,0.015,Asia
+SAU,Saudi Arabia,2019,0.015,Asia
+SAU,Saudi Arabia,2020,0.014,Asia
+SAU,Saudi Arabia,2021,0.015,Asia
+SAU,Saudi Arabia,2022,0.015,Asia
+SAU,Saudi Arabia,2023,0.014,Asia
+SAU,Saudi Arabia,2024,0.015,Asia
+SAU,Saudi Arabia,2025,0.016,Asia
+SEN,Senegal,2015,0.726,Africa
+SEN,Senegal,2016,0.726,Africa
+SEN,Senegal,2017,0.701,Africa
+SEN,Senegal,2018,0.688,Africa
+SEN,Senegal,2019,0.697,Africa
+SEN,Senegal,2020,0.728,Africa
+SEN,Senegal,2021,0.714,Africa
+SEN,Senegal,2022,0.686,Africa
+SEN,Senegal,2023,0.625,Africa
+SEN,Senegal,2024,0.605,Africa
+SEN,Senegal,2025,0.633,Africa
+SRB,Serbia,2015,0.422,Europe
+SRB,Serbia,2016,0.411,Europe
+SRB,Serbia,2017,0.376,Europe
+SRB,Serbia,2018,0.354,Europe
+SRB,Serbia,2019,0.365,Europe
+SRB,Serbia,2020,0.349,Europe
+SRB,Serbia,2021,0.336,Europe
+SRB,Serbia,2022,0.357,Europe
+SRB,Serbia,2023,0.36,Europe
+SRB,Serbia,2024,0.315,Europe
+SRB,Serbia,2025,0.3,Europe
+SYC,Seychelles,2015,0.518,Africa
+SYC,Seychelles,2016,0.585,Africa
+SYC,Seychelles,2017,0.599,Africa
+SYC,Seychelles,2018,0.605,Africa
+SYC,Seychelles,2019,0.621,Africa
+SYC,Seychelles,2020,0.666,Africa
+SYC,Seychelles,2021,0.711,Africa
+SYC,Seychelles,2022,0.735,Africa
+SYC,Seychelles,2023,0.728,Africa
+SYC,Seychelles,2024,0.737,Africa
+SYC,Seychelles,2025,0.76,Africa
+SLE,Sierra Leone,2015,0.514,Africa
+SLE,Sierra Leone,2016,0.514,Africa
+SLE,Sierra Leone,2017,0.52,Africa
+SLE,Sierra Leone,2018,0.548,Africa
+SLE,Sierra Leone,2019,0.554,Africa
+SLE,Sierra Leone,2020,0.561,Africa
+SLE,Sierra Leone,2021,0.562,Africa
+SLE,Sierra Leone,2022,0.57,Africa
+SLE,Sierra Leone,2023,0.512,Africa
+SLE,Sierra Leone,2024,0.471,Africa
+SLE,Sierra Leone,2025,0.471,Africa
+SGP,Singapore,2015,0.416,Asia
+SGP,Singapore,2016,0.424,Asia
+SGP,Singapore,2017,0.425,Asia
+SGP,Singapore,2018,0.409,Asia
+SGP,Singapore,2019,0.403,Asia
+SGP,Singapore,2020,0.402,Asia
+SGP,Singapore,2021,0.395,Asia
+SGP,Singapore,2022,0.395,Asia
+SGP,Singapore,2023,0.405,Asia
+SGP,Singapore,2024,0.418,Asia
+SGP,Singapore,2025,0.434,Asia
+SVK,Slovakia,2015,0.838,Europe
+SVK,Slovakia,2016,0.837,Europe
+SVK,Slovakia,2017,0.835,Europe
+SVK,Slovakia,2018,0.814,Europe
+SVK,Slovakia,2019,0.841,Europe
+SVK,Slovakia,2020,0.84,Europe
+SVK,Slovakia,2021,0.839,Europe
+SVK,Slovakia,2022,0.837,Europe
+SVK,Slovakia,2023,0.812,Europe
+SVK,Slovakia,2024,0.746,Europe
+SVK,Slovakia,2025,0.733,Europe
+SVN,Slovenia,2015,0.873,Europe
+SVN,Slovenia,2016,0.861,Europe
+SVN,Slovenia,2017,0.84,Europe
+SVN,Slovenia,2018,0.83,Europe
+SVN,Slovenia,2019,0.814,Europe
+SVN,Slovenia,2020,0.752,Europe
+SVN,Slovenia,2021,0.715,Europe
+SVN,Slovenia,2022,0.808,Europe
+SVN,Slovenia,2023,0.76,Europe
+SVN,Slovenia,2024,0.725,Europe
+SVN,Slovenia,2025,0.692,Europe
+SLB,Solomon Islands,2015,0.594,Oceania
+SLB,Solomon Islands,2016,0.61,Oceania
+SLB,Solomon Islands,2017,0.616,Oceania
+SLB,Solomon Islands,2018,0.623,Oceania
+SLB,Solomon Islands,2019,0.656,Oceania
+SLB,Solomon Islands,2020,0.655,Oceania
+SLB,Solomon Islands,2021,0.658,Oceania
+SLB,Solomon Islands,2022,0.659,Oceania
+SLB,Solomon Islands,2023,0.666,Oceania
+SLB,Solomon Islands,2024,0.688,Oceania
+SLB,Solomon Islands,2025,0.696,Oceania
+SOM,Somalia,2015,0.162,Africa
+SOM,Somalia,2016,0.16,Africa
+SOM,Somalia,2017,0.167,Africa
+SOM,Somalia,2018,0.154,Africa
+SOM,Somalia,2019,0.148,Africa
+SOM,Somalia,2020,0.154,Africa
+SOM,Somalia,2021,0.161,Africa
+SOM,Somalia,2022,0.158,Africa
+SOM,Somalia,2023,0.167,Africa
+SOM,Somalia,2024,0.165,Africa
+SOM,Somalia,2025,0.165,Africa
+ZAF,South Africa,2015,0.755,Africa
+ZAF,South Africa,2016,0.752,Africa
+ZAF,South Africa,2017,0.738,Africa
+ZAF,South Africa,2018,0.747,Africa
+ZAF,South Africa,2019,0.727,Africa
+ZAF,South Africa,2020,0.719,Africa
+ZAF,South Africa,2021,0.725,Africa
+ZAF,South Africa,2022,0.718,Africa
+ZAF,South Africa,2023,0.712,Africa
+ZAF,South Africa,2024,0.734,Africa
+ZAF,South Africa,2025,0.743,Africa
+KOR,South Korea,2015,0.705,Asia
+KOR,South Korea,2016,0.718,Asia
+KOR,South Korea,2017,0.852,Asia
+KOR,South Korea,2018,0.857,Asia
+KOR,South Korea,2019,0.842,Asia
+KOR,South Korea,2020,0.85,Asia
+KOR,South Korea,2021,0.852,Asia
+KOR,South Korea,2022,0.802,Asia
+KOR,South Korea,2023,0.722,Asia
+KOR,South Korea,2024,0.724,Asia
+KOR,South Korea,2025,0.819,Asia
+SSD,South Sudan,2015,0.166,Africa
+SSD,South Sudan,2016,0.158,Africa
+SSD,South Sudan,2017,0.157,Africa
+SSD,South Sudan,2018,0.153,Africa
+SSD,South Sudan,2019,0.16,Africa
+SSD,South Sudan,2020,0.169,Africa
+SSD,South Sudan,2021,0.137,Africa
+SSD,South Sudan,2022,0.13,Africa
+SSD,South Sudan,2023,0.167,Africa
+SSD,South Sudan,2024,0.154,Africa
+SSD,South Sudan,2025,0.133,Africa
+ESP,Spain,2015,0.856,Europe
+ESP,Spain,2016,0.847,Europe
+ESP,Spain,2017,0.835,Europe
+ESP,Spain,2018,0.851,Europe
+ESP,Spain,2019,0.871,Europe
+ESP,Spain,2020,0.874,Europe
+ESP,Spain,2021,0.85,Europe
+ESP,Spain,2022,0.867,Europe
+ESP,Spain,2023,0.846,Europe
+ESP,Spain,2024,0.826,Europe
+ESP,Spain,2025,0.822,Europe
+LKA,Sri Lanka,2015,0.55,Asia
+LKA,Sri Lanka,2016,0.595,Asia
+LKA,Sri Lanka,2017,0.591,Asia
+LKA,Sri Lanka,2018,0.612,Asia
+LKA,Sri Lanka,2019,0.564,Asia
+LKA,Sri Lanka,2020,0.579,Asia
+LKA,Sri Lanka,2021,0.572,Asia
+LKA,Sri Lanka,2022,0.602,Asia
+LKA,Sri Lanka,2023,0.585,Asia
+LKA,Sri Lanka,2024,0.677,Asia
+LKA,Sri Lanka,2025,0.783,Asia
+SDN,Sudan,2015,0.22,Africa
+SDN,Sudan,2016,0.219,Africa
+SDN,Sudan,2017,0.226,Africa
+SDN,Sudan,2018,0.227,Africa
+SDN,Sudan,2019,0.193,Africa
+SDN,Sudan,2020,0.167,Africa
+SDN,Sudan,2021,0.163,Africa
+SDN,Sudan,2022,0.158,Africa
+SDN,Sudan,2023,0.139,Africa
+SDN,Sudan,2024,0.137,Africa
+SDN,Sudan,2025,0.13,Africa
+SUR,Suriname,2015,0.757,South America
+SUR,Suriname,2016,0.754,South America
+SUR,Suriname,2017,0.748,South America
+SUR,Suriname,2018,0.748,South America
+SUR,Suriname,2019,0.741,South America
+SUR,Suriname,2020,0.754,South America
+SUR,Suriname,2021,0.761,South America
+SUR,Suriname,2022,0.781,South America
+SUR,Suriname,2023,0.764,South America
+SUR,Suriname,2024,0.767,South America
+SUR,Suriname,2025,0.781,South America
+SWE,Sweden,2015,0.915,Europe
+SWE,Sweden,2016,0.914,Europe
+SWE,Sweden,2017,0.914,Europe
+SWE,Sweden,2018,0.908,Europe
+SWE,Sweden,2019,0.899,Europe
+SWE,Sweden,2020,0.901,Europe
+SWE,Sweden,2021,0.9,Europe
+SWE,Sweden,2022,0.892,Europe
+SWE,Sweden,2023,0.883,Europe
+SWE,Sweden,2024,0.881,Europe
+SWE,Sweden,2025,0.889,Europe
+CHE,Switzerland,2015,0.903,Europe
+CHE,Switzerland,2016,0.902,Europe
+CHE,Switzerland,2017,0.902,Europe
+CHE,Switzerland,2018,0.902,Europe
+CHE,Switzerland,2019,0.902,Europe
+CHE,Switzerland,2020,0.902,Europe
+CHE,Switzerland,2021,0.896,Europe
+CHE,Switzerland,2022,0.893,Europe
+CHE,Switzerland,2023,0.884,Europe
+CHE,Switzerland,2024,0.882,Europe
+CHE,Switzerland,2025,0.882,Europe
+SYR,Syria,2015,0.136,Asia
+SYR,Syria,2016,0.136,Asia
+SYR,Syria,2017,0.137,Asia
+SYR,Syria,2018,0.135,Asia
+SYR,Syria,2019,0.136,Asia
+SYR,Syria,2020,0.138,Asia
+SYR,Syria,2021,0.136,Asia
+SYR,Syria,2022,0.137,Asia
+SYR,Syria,2023,0.145,Asia
+SYR,Syria,2024,0.143,Asia
+SYR,Syria,2025,0.128,Asia
+TWN,Taiwan,2015,0.806,Asia
+TWN,Taiwan,2016,0.835,Asia
+TWN,Taiwan,2017,0.845,Asia
+TWN,Taiwan,2018,0.845,Asia
+TWN,Taiwan,2019,0.834,Asia
+TWN,Taiwan,2020,0.82,Asia
+TWN,Taiwan,2021,0.82,Asia
+TWN,Taiwan,2022,0.827,Asia
+TWN,Taiwan,2023,0.823,Asia
+TWN,Taiwan,2024,0.804,Asia
+TWN,Taiwan,2025,0.801,Asia
+TJK,Tajikistan,2015,0.184,Asia
+TJK,Tajikistan,2016,0.174,Asia
+TJK,Tajikistan,2017,0.168,Asia
+TJK,Tajikistan,2018,0.164,Asia
+TJK,Tajikistan,2019,0.164,Asia
+TJK,Tajikistan,2020,0.17,Asia
+TJK,Tajikistan,2021,0.171,Asia
+TJK,Tajikistan,2022,0.164,Asia
+TJK,Tajikistan,2023,0.164,Asia
+TJK,Tajikistan,2024,0.168,Asia
+TJK,Tajikistan,2025,0.158,Asia
+TZA,Tanzania,2015,0.453,Africa
+TZA,Tanzania,2016,0.409,Africa
+TZA,Tanzania,2017,0.401,Africa
+TZA,Tanzania,2018,0.385,Africa
+TZA,Tanzania,2019,0.383,Africa
+TZA,Tanzania,2020,0.383,Africa
+TZA,Tanzania,2021,0.366,Africa
+TZA,Tanzania,2022,0.397,Africa
+TZA,Tanzania,2023,0.409,Africa
+TZA,Tanzania,2024,0.413,Africa
+TZA,Tanzania,2025,0.365,Africa
+THA,Thailand,2015,0.16,Asia
+THA,Thailand,2016,0.16,Asia
+THA,Thailand,2017,0.154,Asia
+THA,Thailand,2018,0.17,Asia
+THA,Thailand,2019,0.208,Asia
+THA,Thailand,2020,0.201,Asia
+THA,Thailand,2021,0.208,Asia
+THA,Thailand,2022,0.216,Asia
+THA,Thailand,2023,0.295,Asia
+THA,Thailand,2024,0.41,Asia
+THA,Thailand,2025,0.424,Asia
+TGO,Togo,2015,0.471,Africa
+TGO,Togo,2016,0.472,Africa
+TGO,Togo,2017,0.442,Africa
+TGO,Togo,2018,0.428,Africa
+TGO,Togo,2019,0.395,Africa
+TGO,Togo,2020,0.424,Africa
+TGO,Togo,2021,0.396,Africa
+TGO,Togo,2022,0.399,Africa
+TGO,Togo,2023,0.389,Africa
+TGO,Togo,2024,0.35,Africa
+TGO,Togo,2025,0.351,Africa
+TTO,Trinidad and Tobago,2015,0.791,North America
+TTO,Trinidad and Tobago,2016,0.79,North America
+TTO,Trinidad and Tobago,2017,0.791,North America
+TTO,Trinidad and Tobago,2018,0.784,North America
+TTO,Trinidad and Tobago,2019,0.787,North America
+TTO,Trinidad and Tobago,2020,0.788,North America
+TTO,Trinidad and Tobago,2021,0.791,North America
+TTO,Trinidad and Tobago,2022,0.778,North America
+TTO,Trinidad and Tobago,2023,0.778,North America
+TTO,Trinidad and Tobago,2024,0.773,North America
+TTO,Trinidad and Tobago,2025,0.786,North America
+TUN,Tunisia,2015,0.727,Africa
+TUN,Tunisia,2016,0.731,Africa
+TUN,Tunisia,2017,0.725,Africa
+TUN,Tunisia,2018,0.728,Africa
+TUN,Tunisia,2019,0.725,Africa
+TUN,Tunisia,2020,0.712,Africa
+TUN,Tunisia,2021,0.535,Africa
+TUN,Tunisia,2022,0.283,Africa
+TUN,Tunisia,2023,0.432,Africa
+TUN,Tunisia,2024,0.422,Africa
+TUN,Tunisia,2025,0.395,Africa
+TUR,Turkey,2015,0.388,Asia
+TUR,Turkey,2016,0.308,Asia
+TUR,Turkey,2017,0.29,Asia
+TUR,Turkey,2018,0.295,Asia
+TUR,Turkey,2019,0.289,Asia
+TUR,Turkey,2020,0.292,Asia
+TUR,Turkey,2021,0.287,Asia
+TUR,Turkey,2022,0.285,Asia
+TUR,Turkey,2023,0.285,Asia
+TUR,Turkey,2024,0.289,Asia
+TUR,Turkey,2025,0.293,Asia
+TKM,Turkmenistan,2015,0.143,Asia
+TKM,Turkmenistan,2016,0.143,Asia
+TKM,Turkmenistan,2017,0.147,Asia
+TKM,Turkmenistan,2018,0.149,Asia
+TKM,Turkmenistan,2019,0.149,Asia
+TKM,Turkmenistan,2020,0.15,Asia
+TKM,Turkmenistan,2021,0.15,Asia
+TKM,Turkmenistan,2022,0.148,Asia
+TKM,Turkmenistan,2023,0.148,Asia
+TKM,Turkmenistan,2024,0.149,Asia
+TKM,Turkmenistan,2025,0.148,Asia
+UGA,Uganda,2015,0.3,Africa
+UGA,Uganda,2016,0.289,Africa
+UGA,Uganda,2017,0.291,Africa
+UGA,Uganda,2018,0.283,Africa
+UGA,Uganda,2019,0.284,Africa
+UGA,Uganda,2020,0.285,Africa
+UGA,Uganda,2021,0.274,Africa
+UGA,Uganda,2022,0.269,Africa
+UGA,Uganda,2023,0.259,Africa
+UGA,Uganda,2024,0.261,Africa
+UGA,Uganda,2025,0.253,Africa
+UKR,Ukraine,2015,0.42,Europe
+UKR,Ukraine,2016,0.433,Europe
+UKR,Ukraine,2017,0.43,Europe
+UKR,Ukraine,2018,0.43,Europe
+UKR,Ukraine,2019,0.528,Europe
+UKR,Ukraine,2020,0.552,Europe
+UKR,Ukraine,2021,0.537,Europe
+UKR,Ukraine,2022,0.392,Europe
+UKR,Ukraine,2023,0.39,Europe
+UKR,Ukraine,2024,0.387,Europe
+UKR,Ukraine,2025,0.386,Europe
+ARE,United Arab Emirates,2015,0.095,Asia
+ARE,United Arab Emirates,2016,0.1,Asia
+ARE,United Arab Emirates,2017,0.095,Asia
+ARE,United Arab Emirates,2018,0.096,Asia
+ARE,United Arab Emirates,2019,0.102,Asia
+ARE,United Arab Emirates,2020,0.102,Asia
+ARE,United Arab Emirates,2021,0.1,Asia
+ARE,United Arab Emirates,2022,0.101,Asia
+ARE,United Arab Emirates,2023,0.102,Asia
+ARE,United Arab Emirates,2024,0.104,Asia
+ARE,United Arab Emirates,2025,0.104,Asia
+GBR,United Kingdom,2015,0.855,Europe
+GBR,United Kingdom,2016,0.854,Europe
+GBR,United Kingdom,2017,0.865,Europe
+GBR,United Kingdom,2018,0.875,Europe
+GBR,United Kingdom,2019,0.854,Europe
+GBR,United Kingdom,2020,0.871,Europe
+GBR,United Kingdom,2021,0.857,Europe
+GBR,United Kingdom,2022,0.844,Europe
+GBR,United Kingdom,2023,0.852,Europe
+GBR,United Kingdom,2024,0.832,Europe
+GBR,United Kingdom,2025,0.772,Europe
+USA,United States,2015,0.9,North America
+USA,United States,2016,0.885,North America
+USA,United States,2017,0.834,North America
+USA,United States,2018,0.824,North America
+USA,United States,2019,0.818,North America
+USA,United States,2020,0.815,North America
+USA,United States,2021,0.821,North America
+USA,United States,2022,0.833,North America
+USA,United States,2023,0.857,North America
+USA,United States,2024,0.843,North America
+USA,United States,2025,0.735,North America
+URY,Uruguay,2015,0.897,South America
+URY,Uruguay,2016,0.897,South America
+URY,Uruguay,2017,0.89,South America
+URY,Uruguay,2018,0.896,South America
+URY,Uruguay,2019,0.896,South America
+URY,Uruguay,2020,0.867,South America
+URY,Uruguay,2021,0.852,South America
+URY,Uruguay,2022,0.818,South America
+URY,Uruguay,2023,0.833,South America
+URY,Uruguay,2024,0.846,South America
+URY,Uruguay,2025,0.862,South America
+UZB,Uzbekistan,2015,0.166,Asia
+UZB,Uzbekistan,2016,0.169,Asia
+UZB,Uzbekistan,2017,0.191,Asia
+UZB,Uzbekistan,2018,0.189,Asia
+UZB,Uzbekistan,2019,0.203,Asia
+UZB,Uzbekistan,2020,0.206,Asia
+UZB,Uzbekistan,2021,0.204,Asia
+UZB,Uzbekistan,2022,0.213,Asia
+UZB,Uzbekistan,2023,0.215,Asia
+UZB,Uzbekistan,2024,0.214,Asia
+UZB,Uzbekistan,2025,0.218,Asia
+VUT,Vanuatu,2015,0.747,Oceania
+VUT,Vanuatu,2016,0.771,Oceania
+VUT,Vanuatu,2017,0.793,Oceania
+VUT,Vanuatu,2018,0.79,Oceania
+VUT,Vanuatu,2019,0.779,Oceania
+VUT,Vanuatu,2020,0.78,Oceania
+VUT,Vanuatu,2021,0.8,Oceania
+VUT,Vanuatu,2022,0.804,Oceania
+VUT,Vanuatu,2023,0.82,Oceania
+VUT,Vanuatu,2024,0.8,Oceania
+VUT,Vanuatu,2025,0.729,Oceania
+VEN,Venezuela,2015,0.3,South America
+VEN,Venezuela,2016,0.293,South America
+VEN,Venezuela,2017,0.233,South America
+VEN,Venezuela,2018,0.213,South America
+VEN,Venezuela,2019,0.209,South America
+VEN,Venezuela,2020,0.206,South America
+VEN,Venezuela,2021,0.215,South America
+VEN,Venezuela,2022,0.209,South America
+VEN,Venezuela,2023,0.206,South America
+VEN,Venezuela,2024,0.196,South America
+VEN,Venezuela,2025,0.181,South America
+VNM,Vietnam,2015,0.148,Asia
+VNM,Vietnam,2016,0.15,Asia
+VNM,Vietnam,2017,0.15,Asia
+VNM,Vietnam,2018,0.161,Asia
+VNM,Vietnam,2019,0.211,Asia
+VNM,Vietnam,2020,0.211,Asia
+VNM,Vietnam,2021,0.169,Asia
+VNM,Vietnam,2022,0.152,Asia
+VNM,Vietnam,2023,0.148,Asia
+VNM,Vietnam,2024,0.159,Asia
+VNM,Vietnam,2025,0.146,Asia
+YEM,Yemen,2015,0.184,Asia
+YEM,Yemen,2016,0.113,Asia
+YEM,Yemen,2017,0.112,Asia
+YEM,Yemen,2018,0.113,Asia
+YEM,Yemen,2019,0.117,Asia
+YEM,Yemen,2020,0.113,Asia
+YEM,Yemen,2021,0.116,Asia
+YEM,Yemen,2022,0.123,Asia
+YEM,Yemen,2023,0.128,Asia
+YEM,Yemen,2024,0.126,Asia
+YEM,Yemen,2025,0.127,Asia
+ZMB,Zambia,2015,0.458,Africa
+ZMB,Zambia,2016,0.397,Africa
+ZMB,Zambia,2017,0.36,Africa
+ZMB,Zambia,2018,0.37,Africa
+ZMB,Zambia,2019,0.358,Africa
+ZMB,Zambia,2020,0.353,Africa
+ZMB,Zambia,2021,0.421,Africa
+ZMB,Zambia,2022,0.52,Africa
+ZMB,Zambia,2023,0.525,Africa
+ZMB,Zambia,2024,0.512,Africa
+ZMB,Zambia,2025,0.497,Africa
+ZWE,Zimbabwe,2015,0.302,Africa
+ZWE,Zimbabwe,2016,0.297,Africa
+ZWE,Zimbabwe,2017,0.3,Africa
+ZWE,Zimbabwe,2018,0.313,Africa
+ZWE,Zimbabwe,2019,0.304,Africa
+ZWE,Zimbabwe,2020,0.299,Africa
+ZWE,Zimbabwe,2021,0.297,Africa
+ZWE,Zimbabwe,2022,0.292,Africa
+ZWE,Zimbabwe,2023,0.296,Africa
+ZWE,Zimbabwe,2024,0.272,Africa
+ZWE,Zimbabwe,2025,0.268,Africa

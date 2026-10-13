@@ -1,5 +1,5 @@
 """
-Step 6: Downloadable CSVs of this site's estimates, for analysts.
+Step 7: Downloadable CSVs of this site's estimates, for analysts.
 
 Writes dashboard/public/data/downloads/*.csv plus manifest.json, which
 describes every file and column and drives the app's Data page.
@@ -127,6 +127,23 @@ FILES = {
             "source_page": "Wikipedia page title", "source_revid": "Wikipedia revision id used",
         },
     },
+    "un_votes_research.csv": {
+        "title": "Research: UN votes vs Russian-designed equipment",
+        "description": "Country-level data behind the research piece: Russian/US-designed shares in 2021, votes on the 2022-23 Ukraine resolutions, alignment score and controls.",
+        "licence": "Vote lists derived from Wikipedia (CC BY-SA 4.0); democracy index from V-Dem via Our World in Data (CC BY 4.0); ideal points CC0",
+        "columns": {
+            "iso3": COMMON["iso3"], "country": COMMON["country"], "region": "Region (Our World in Data)",
+            "rus_share_2021": "Russian/Soviet-designed share of the estimated arsenal in 2021",
+            "usa_share_2021": "US-designed share of the estimated arsenal in 2021",
+            "votes_yes": "Votes for the resolutions (against Russia's position)", "votes_abstain": "Abstentions",
+            "votes_no": "Votes against the resolutions (with Russia)", "votes_absent": "Absent / not voting",
+            "alignment": "Mean of No=1, Abstain=0.5, Yes=0 over votes cast (0 = always against Russia)",
+            "ideal_point_2023": "Voeten et al. UN ideal point, 2023 (higher = closer to the US-led bloc)",
+            "electoral_democracy_2021": "V-Dem electoral democracy index, 2021 (0-1)",
+            "former_soviet": "Former Soviet republic", "russia_supplier_status": "Status on the Russia supplier page",
+            "in_main_sample": "In the main analysis (arsenal >= 100 TIV in 2021; Russia and Ukraine excluded)",
+        },
+    },
     "factbook_validation.csv": {
         "title": "Independent check against the CIA World Factbook",
         "description": "Our largest design origins compared with the Factbook's description of each military's equipment (final edition, 2025).",
@@ -245,6 +262,17 @@ def build():
                 "most_exposed_area_share": (d["topArea"] or {}).get("share"), "small_arsenal": d["small"],
             })
 
+    research = []
+    with open(config.APP_DATA_DIR / "research" / "un_votes.json", encoding="utf-8") as f:
+        for c in json.load(f)["countries"]:
+            research.append({
+                "iso3": c["iso3"], "country": c["name"], "region": c["region"], "rus_share_2021": c["rusShare"],
+                "usa_share_2021": c["usaShare"], "votes_yes": c["votes"]["yes"], "votes_abstain": c["votes"]["abstain"],
+                "votes_no": c["votes"]["no"], "votes_absent": c["votes"]["absent"], "alignment": c["alignment"],
+                "ideal_point_2023": c["idealPoint"], "electoral_democracy_2021": c["democracy"], "former_soviet": c["postSoviet"],
+                "russia_supplier_status": c["russiaStatus"], "in_main_sample": c["inSample"],
+            })
+
     checks = []
     for iso3, v in sorted(validation.items()):
         ours = v["ours"] + [{}, {}]
@@ -264,6 +292,7 @@ def build():
     write("backlog_by_origin.csv", backlog)
     write("inherited_equipment.csv", inherited)
     write("factbook_validation.csv", checks)
+    write("un_votes_research.csv", research)
 
     manifest = {
         "generated": date.today().isoformat(),
@@ -279,7 +308,7 @@ def build():
 
 
 def main():
-    logger.info("=== Step 6: Downloads ===")
+    logger.info("=== Step 7: Downloads ===")
     manifest = build()
     for f in manifest["files"]:
         logger.info("  %-28s %7d rows  %6.0f KB", f["file"], f["rows"], f["bytes"] / 1024)

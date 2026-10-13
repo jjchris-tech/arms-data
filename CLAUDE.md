@@ -13,11 +13,13 @@ pipeline/                 Python data pipeline (run from project root)
   step3_dependency.py     in-service model -> dashboard/public/data/countries.json + country/{ISO3}.json
   step4_suppliers.py      supplier view: who depends on each design origin, 'still buying?' status -> suppliers.json, supplier/{ISO3}.json
   step5_validation.py     compares our top design origin with the CIA World Factbook's equipment text -> validation.json
-  step6_downloads.py      analyst CSVs + manifest.json (column dictionary) -> dashboard/public/data/downloads/
+  step6_un_votes.py       research: Russian-designed share (2021) vs UN Ukraine votes (OLS, HC1) -> research/un_votes.json
+  step7_downloads.py      analyst CSVs + manifest.json (column dictionary) -> dashboard/public/data/downloads/
                           (derived estimates only, never SIPRI deal records)
   checks.py               sanity checks against known facts; run_all.py fails loudly if one breaks
   build_factbook_reference.py  one-off: regenerates data/reference/factbook_equipment.csv (CC0, committed)
   utils/factbook.py       parses Factbook prose into main / mentioned origins
+  build_research_reference.py  one-off: UN ES-11 votes (Wikipedia, tally-checked), Voeten ideal points, V-Dem democracy
   build_legacy_reference.py  one-off: Wikipedia equipment lists -> data/reference/legacy_holdings.csv (CC BY-SA, needs lxml)
   utils/legacy.py         inherited Soviet/Yugoslav kit: match to SIPRI families, subtract SIPRI-recorded units, value x0.4
   utils/design_origin.py  who designed a system (not who sold it); USSR -> RUS; Antonov/Ivchenko -> UKR
@@ -55,6 +57,8 @@ attribution: "Information from the Stockholm International Peace Research Instit
 - After changing classification or origin logic, read the `report()` output of step 2 and run `checks.py`.
 - Validation (step 4) is an out-of-sample check: don't tune model parameters (e.g. service lives) to raise the
   Factbook agreement score, or the published score stops meaning anything.
+- Research pages: every number in the text is computed from the JSON at render time; never hard-code findings.
+  checks.py guards data integrity for research (tally matches, sample size), never the finding itself.
 - Inherited stocks (successor states): Wikipedia counts launchers, SIPRI values long-range SAMs per battalion ->
   LAUNCHERS_PER_UNIT in utils/legacy.py. KGZ, TKM, MNE, HRV pages have no quantities, so they stay unadjusted.
 
@@ -62,4 +66,4 @@ attribution: "Information from the Stockholm International Peace Research Instit
 
 - The user prefers honest assessments over enthusiasm, and one feature done well over many done roughly.
 - Audience is analysts: traceability, downloads and method transparency matter more than polish.
-- Keep the UI minimal: countries, suppliers, method and data pages. New features must earn their place.
+- Keep the UI minimal: countries, suppliers, research, method and data pages. New features must earn their place.

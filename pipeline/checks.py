@@ -96,6 +96,16 @@ def main():
     check(status_of.get("BLR") == "staying", f"Belarus is staying with Russia ({status_of.get('BLR')})")
     check(status_of.get("AZE") == "moving_away", f"Azerbaijan is moving away from Russia, now buying Israeli/Turkish ({status_of.get('AZE')})")
 
+    print("Research: UN votes")
+    votes = pd.read_csv(config.PROJECT_ROOT / "data" / "reference" / "un_votes_es11.csv")
+    with open(config.APP_DATA_DIR / "research" / "un_votes.json", encoding="utf-8") as f:
+        research = json.load(f)
+    core = [x["id"] for x in research["resolutions"] if x["core"]]
+    exact = votes.drop_duplicates("resolution").set_index("resolution")["matches_tally"]
+    check(len(core) == 5 and all(exact.get(k, False) for k in core),
+          f"all {len(core)} resolutions used match their official tally")
+    check(research["sample"]["n"] >= 100, f"research sample has {research['sample']['n']} countries (need >= 100)")
+
     print("Inherited equipment (successor states)")
     belarus, uzbekistan = profile("BLR"), profile("UZB")
     check(share_now(belarus, "RUS") >= 0.80, f"Belarus overwhelmingly Russian/Soviet-designed ({share_now(belarus, 'RUS'):.0%})")

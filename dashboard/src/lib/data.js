@@ -19,5 +19,6 @@ export const loadCountry = iso3 => load(`country/${iso3}.json`)
 export const loadValidation = () => load('validation.json')
 export const loadSuppliers = () => load('suppliers.json')
 export const loadSupplier = iso3 => load(`supplier/${iso3}.json`)
+export const loadUnVotes = () => load('research/un_votes.json')
 export const loadManifest = () => load('downloads/manifest.json')
 export const downloadUrl = file => BASE + 'downloads/' + file

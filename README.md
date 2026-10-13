@@ -27,6 +27,10 @@ The same estimates are also turned around into a **supplier view**: for each des
 on its equipment, in which capability areas, and whether their recent orders show them staying, diversifying or
 moving away.
 
+**Research:** *Do militaries that rely on Russian arms vote with Russia?* — Russian-designed share of the arsenal in
+2021 against votes on the UN's 2022–23 Ukraine resolutions, with controls for democracy, region and US-designed
+equipment (`pipeline/step6_un_votes.py`).
+
 Full method and limitations are on the site's Method page. Key limits: domestic production is invisible, and SIPRI flags about half of all deals as having uncertain figures.
 
 ## Running it

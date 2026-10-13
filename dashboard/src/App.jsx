@@ -5,6 +5,7 @@ import CountryPage from './components/CountryPage'
 import DataPage from './components/DataPage'
 import Method from './components/Method'
 import SupplierList from './components/SupplierList'
+import UnVotes from './components/UnVotes'
 import SupplierPage from './components/SupplierPage'
 
 function ScrollToTop() {
@@ -18,11 +19,12 @@ export default function App() {
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       <header className="border-b border-stone-200 dark:border-stone-800">
-        <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto px-4 py-3 sm:py-4 flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
           <Link to="/" className="font-semibold tracking-tight">Arms Dependency</Link>
           <nav className="flex gap-3 sm:gap-5 text-sm text-stone-600 dark:text-stone-400">
             <Link to="/" className="hover:text-stone-900 dark:hover:text-stone-100">Countries</Link>
             <Link to="/suppliers" className="hover:text-stone-900 dark:hover:text-stone-100">Suppliers</Link>
+            <Link to="/research/un-votes" className="hover:text-stone-900 dark:hover:text-stone-100">Research</Link>
             <Link to="/method" className="hover:text-stone-900 dark:hover:text-stone-100">Method</Link>
             <Link to="/data" className="hover:text-stone-900 dark:hover:text-stone-100">Data</Link>
           </nav>
@@ -35,6 +37,7 @@ export default function App() {
           <Route path="/country/:iso3" element={<CountryPage />} />
           <Route path="/suppliers" element={<SupplierList />} />
           <Route path="/supplier/:iso3" element={<SupplierPage />} />
+          <Route path="/research/un-votes" element={<UnVotes />} />
           <Route path="/method" element={<Method />} />
           <Route path="/data" element={<DataPage />} />
           <Route path="*" element={<p>Page not found. <Link className="underline" to="/">Back to countries</Link></p>} />
